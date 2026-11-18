@@ -146,7 +146,7 @@ const bengaliTranslations = new Map(
     "Subscribe to receive new project and portfolio updates.": "নতুন প্রকল্প ও পোর্টফোলিওর আপডেট পেতে সাবস্ক্রাইব করুন।",
     "Enter your email": "আপনার ইমেইল লিখুন",
     Subscribe: "সাবস্ক্রাইব",
-    "Subscription delivery requires a configured Formspree form ID.": "সাবস্ক্রিপশন চালু করতে Formspree ফর্ম আইডি সেট করতে হবে।",
+    "Your email will be sent through Formspree.": "আপনার ইমেইল Formspree-এর মাধ্যমে পাঠানো হবে।",
     "Back to top": "শুরুতে ফিরে যান",
     "Please enter a valid email address.": "সঠিক ইমেইল ঠিকানা লিখুন।",
     "Subscription is not configured yet. Replace YOUR_FORM_ID with your Formspree form ID.": "সাবস্ক্রিপশন এখনো সেট করা হয়নি। YOUR_FORM_ID-এর জায়গায় আপনার Formspree ফর্ম আইডি দিন।",
