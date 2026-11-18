@@ -178,15 +178,28 @@ if (subscriptionForm) {
     }
 
     const subscribersKey = "portfolioSubscribers";
-    let subscribers = [];
+    let subscribers;
 
     try {
-      subscribers = JSON.parse(localStorage.getItem(subscribersKey) || "[]");
-      if (!Array.isArray(subscribers)) {
-        subscribers = [];
+      const savedSubscribers = localStorage.getItem(subscribersKey);
+      subscribers = savedSubscribers ? JSON.parse(savedSubscribers) : [];
+
+      if (
+        !Array.isArray(subscribers) ||
+        subscribers.some(function (subscriber) {
+          return (
+            typeof subscriber !== "string" &&
+            (!subscriber || typeof subscriber.email !== "string")
+          );
+        })
+      ) {
+        throw new Error("Saved subscription data has an unexpected format.");
       }
-    } catch {
-      subscribers = [];
+    } catch (error) {
+      console.error("Could not read saved subscription data.", error);
+      status.classList.add("subscription-status-error");
+      status.textContent = "Could not access saved email data. Check your browser storage settings and try again.";
+      return;
     }
 
     const normalizedEmail = email.toLowerCase();
@@ -194,12 +207,12 @@ if (subscriptionForm) {
     const existingSubscriber = subscribers.find(function (subscriber) {
       return typeof subscriber === "string"
         ? subscriber === normalizedEmail
-        : subscriber.email === normalizedEmail;
+        : subscriber.email.toLowerCase() === normalizedEmail;
     });
 
     if (existingSubscriber) {
-      status.classList.add("subscription-status-success");
-      status.textContent = "This email is already subscribed.";
+      status.classList.add("subscription-status-info");
+      status.textContent = "This email is already saved in this browser. Email updates are not active yet.";
       emailInput.select();
       return;
     }
@@ -209,17 +222,25 @@ if (subscriptionForm) {
     buttonSpinner.classList.remove("hidden");
 
     window.setTimeout(function () {
-      subscribers.push({
-        email: normalizedEmail,
-        subscribedAt: new Date().toISOString(),
-      });
-      localStorage.setItem(subscribersKey, JSON.stringify(subscribers));
-      status.classList.add("subscription-status-success");
-      status.textContent = "Thank you! You are subscribed.";
-      emailInput.value = "";
-      submitButton.disabled = false;
-      buttonLabel.textContent = "Subscribed";
-      buttonSpinner.classList.add("hidden");
+      try {
+        subscribers.push({
+          email: normalizedEmail,
+          subscribedAt: new Date().toISOString(),
+        });
+        localStorage.setItem(subscribersKey, JSON.stringify(subscribers));
+        status.classList.add("subscription-status-success");
+        status.textContent = "Saved in this browser only. Email updates are not active yet.";
+        emailInput.value = "";
+        buttonLabel.textContent = "Saved";
+      } catch (error) {
+        console.error("Could not save subscription data.", error);
+        status.classList.add("subscription-status-error");
+        status.textContent = "Could not save your email in this browser. Check storage settings and try again.";
+        buttonLabel.textContent = "Subscribe";
+      } finally {
+        submitButton.disabled = false;
+        buttonSpinner.classList.add("hidden");
+      }
 
       window.setTimeout(function () {
         buttonLabel.textContent = "Subscribe";
