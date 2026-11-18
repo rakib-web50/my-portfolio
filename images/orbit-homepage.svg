@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 2600" fill="none">
+  <defs>
+    <linearGradient id="orbit-bg" x1="48" y1="44" x2="1145" y2="770" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8E9FA"/>
+      <stop offset="1" stop-color="#DBEFF0"/>
+    </linearGradient>
+    <linearGradient id="orbit-preview" x1="735" y1="200" x2="1086" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#796BE0"/>
+      <stop offset="1" stop-color="#47B6C5"/>
+    </linearGradient>
+    <filter id="orbit-shadow" x="0" y="0" width="1200" height="2600" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="16"/>
+      <feOffset dy="10"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".14"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="2600" fill="url(#orbit-bg)"/>
+  <circle cx="1072" cy="105" r="186" fill="#ADA5F0" fill-opacity=".25"/>
+  <circle cx="73" cy="742" r="176" fill="#75C8D1" fill-opacity=".2"/>
+  <g filter="url(#orbit-shadow)">
+    <rect x="34" y="30" width="1132" height="2540" rx="26" fill="#fff"/>
+    <path d="M34 56a26 26 0 0 1 26-26h1080a26 26 0 0 1 26 26v28H34V56Z" fill="#FCFCFF"/>
+    <circle cx="62" cy="57" r="6" fill="#F28C8C"/>
+    <circle cx="82" cy="57" r="6" fill="#F4C66A"/>
+    <circle cx="102" cy="57" r="6" fill="#78C7A5"/>
+    <rect x="422" y="45" width="354" height="23" rx="11.5" fill="#F0F0F7"/>
+    <path d="M34 84h1132" stroke="#E8E8F0"/>
+    <circle cx="116" cy="126" r="18" fill="#7162D1"/>
+    <path d="M109 126h14m-7-7v14" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="146" y="133" fill="#252944" font-family="Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="1">ORBIT</text>
+    <text x="587" y="130" fill="#77788F" font-family="Arial,sans-serif" font-size="14">Product</text>
+    <text x="671" y="130" fill="#77788F" font-family="Arial,sans-serif" font-size="14">How it works</text>
+    <text x="783" y="130" fill="#77788F" font-family="Arial,sans-serif" font-size="14">About</text>
+    <text x="902" y="130" fill="#555A77" font-family="Arial,sans-serif" font-size="14" font-weight="600">Sign in</text>
+    <rect x="975" y="105" width="147" height="42" rx="21" fill="#302C62"/>
+    <text x="1003" y="131" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700">Try Orbit free</text>
+    <rect x="100" y="198" width="213" height="29" rx="14.5" fill="#F0EEFC"/>
+    <circle cx="118" cy="212" r="5" fill="#7769D6"/>
+    <text x="133" y="217" fill="#645AB0" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.1">YOUR WORK, IN ONE PLACE</text>
+    <text x="97" y="305" fill="#252944" font-family="Arial,sans-serif" font-size="56" font-weight="700">Bring your work</text>
+    <text x="97" y="370" fill="#252944" font-family="Arial,sans-serif" font-size="56" font-weight="700">into focus.</text>
+    <text x="100" y="415" fill="#75768E" font-family="Arial,sans-serif" font-size="17">Keep notes, plans, and your AI assistant</text>
+    <text x="100" y="442" fill="#75768E" font-family="Arial,sans-serif" font-size="17">together in one focused workspace.</text>
+    <rect x="99" y="480" width="147" height="48" rx="24" fill="#38316D"/>
+    <text x="131" y="509" fill="#fff" font-family="Arial,sans-serif" font-size="14" font-weight="700">Explore Orbit</text>
+    <rect x="260" y="480" width="154" height="48" rx="24" fill="#fff" stroke="#E1E0EB"/>
+    <circle cx="284" cy="504" r="9" fill="#ECEBFA"/>
+    <path d="m281 500 7 4-7 4v-8Z" fill="#7065CD"/>
+    <text x="302" y="509" fill="#595B74" font-family="Arial,sans-serif" font-size="14" font-weight="600">See how it works</text>
+    <circle cx="114" cy="584" r="15" fill="#E5F4F1"/>
+    <path d="m107 584 5 5 9-10" stroke="#328E7F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="139" y="581" fill="#41465E" font-family="Arial,sans-serif" font-size="13" font-weight="700">Your ideas stay yours</text>
+    <text x="139" y="601" fill="#9696A9" font-family="Arial,sans-serif" font-size="12">Your workspace, your terms</text>
+    <rect x="681" y="187" width="426" height="385" rx="27" fill="url(#orbit-preview)"/>
+    <circle cx="1044" cy="218" r="83" fill="#fff" fill-opacity=".09"/>
+    <circle cx="721" cy="550" r="92" fill="#fff" fill-opacity=".07"/>
+    <rect x="725" y="228" width="340" height="294" rx="19" fill="#fff"/>
+    <path d="M725 247a19 19 0 0 1 19-19h302a19 19 0 0 1 19 19v35H725v-35Z" fill="#FCFCFE"/>
+    <circle cx="750" cy="250" r="10" fill="#ECEAFA"/>
+    <path d="M750 244v12m-6-6h12" stroke="#7165CE" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="769" y="254" fill="#3B3D56" font-family="Arial,sans-serif" font-size="12" font-weight="700">Your Orbit workspace</text>
+    <circle cx="1033" cy="250" r="3" fill="#A1A1B2"/>
+    <circle cx="1043" cy="250" r="3" fill="#A1A1B2"/>
+    <rect x="748" y="301" width="127" height="7" rx="3.5" fill="#333650"/>
+    <rect x="748" y="319" width="252" height="5" rx="2.5" fill="#C5C5D0"/>
+    <rect x="748" y="337" width="281" height="5" rx="2.5" fill="#C5C5D0"/>
+    <rect x="748" y="355" width="207" height="5" rx="2.5" fill="#C5C5D0"/>
+    <rect x="748" y="382" width="295" height="81" rx="13" fill="#F6F5FC"/>
+    <circle cx="773" cy="408" r="12" fill="#E5E2F8"/>
+    <path d="m773 401 2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Z" fill="#7164CE"/>
+    <rect x="794" y="404" width="93" height="6" rx="3" fill="#53556D"/>
+    <rect x="794" y="417" width="202" height="5" rx="2.5" fill="#A8A8B9"/>
+    <rect x="794" y="430" width="177" height="5" rx="2.5" fill="#A8A8B9"/>
+    <rect x="748" y="477" width="236" height="28" rx="14" fill="#F1F0F8"/>
+    <text x="765" y="495" fill="#A0A0B1" font-family="Arial,sans-serif" font-size="11">Ask Orbit anything...</text>
+    <circle cx="1020" cy="491" r="11" fill="#7468D3"/>
+    <path d="m1017 491 3 3 4-6" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="646" y="472" width="153" height="73" rx="16" fill="#fff"/>
+    <circle cx="675" cy="508" r="15" fill="#E7E4FA"/>
+    <path d="M675 500v16m-8-8h16" stroke="#7165CE" stroke-width="2" stroke-linecap="round"/>
+    <text x="699" y="504" fill="#45485F" font-family="Arial,sans-serif" font-size="11" font-weight="700">Ideas in motion</text>
+    <text x="699" y="521" fill="#9292A5" font-family="Arial,sans-serif" font-size="10">Keep your next step close</text>
+    <path d="M96 647h1008" stroke="#E9E8F0"/>
+    <text x="100" y="689" fill="#292D49" font-family="Arial,sans-serif" font-size="18" font-weight="700">One workspace for your ideas</text>
+    <rect x="100" y="711" width="292" height="43" rx="13" fill="#F8F7FC"/>
+    <circle cx="122" cy="732" r="10" fill="#E9E6FA"/>
+    <path d="M119 727h6v10h-6z" stroke="#7669D0" stroke-width="1.4"/>
+    <text x="142" y="737" fill="#5F6078" font-family="Arial,sans-serif" font-size="12" font-weight="600">Notes that connect</text>
+    <rect x="404" y="711" width="292" height="43" rx="13" fill="#F8F7FC"/>
+    <circle cx="426" cy="732" r="10" fill="#E5F3F0"/>
+    <path d="m422 732 3 3 6-7" stroke="#328E7F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="446" y="737" fill="#5F6078" font-family="Arial,sans-serif" font-size="12" font-weight="600">Plans with purpose</text>
+    <rect x="708" y="711" width="378" height="43" rx="13" fill="#F8F7FC"/>
+    <circle cx="730" cy="732" r="10" fill="#F4E8FA"/>
+    <path d="m730 725 2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Z" fill="#9A6BC6"/>
+    <text x="750" y="737" fill="#5F6078" font-family="Arial,sans-serif" font-size="12" font-weight="600">AI, with you in control</text>
+    <path d="M96 795h1008" stroke="#E9E8F0"/>
+    <text x="100" y="858" fill="#292D49" font-family="Arial,sans-serif" font-size="34" font-weight="700">A workspace that keeps work in reach</text>
+    <text x="100" y="891" fill="#89899D" font-family="Arial,sans-serif" font-size="15">Keep notes, plans, and tasks connected in one place.</text>
+    <rect x="100" y="929" width="310" height="213" rx="20" fill="#F8F7FC"/>
+    <circle cx="147" cy="977" r="23" fill="#E8E5FA"/>
+    <path d="M140 969h14v16h-14zm3-4h8" stroke="#786CD2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="132" y="1030" fill="#373A56" font-family="Arial,sans-serif" font-size="17" font-weight="700">Notes that connect</text>
+    <text x="132" y="1060" fill="#85859A" font-family="Arial,sans-serif" font-size="13">Keep useful thoughts close</text>
+    <text x="132" y="1082" fill="#85859A" font-family="Arial,sans-serif" font-size="13">to the work they support.</text>
+    <rect x="445" y="929" width="310" height="213" rx="20" fill="#F8F7FC"/>
+    <circle cx="492" cy="977" r="23" fill="#E3F3EF"/>
+    <path d="m483 977 6 6 12-13" stroke="#348D7E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="477" y="1030" fill="#373A56" font-family="Arial,sans-serif" font-size="17" font-weight="700">Plans with purpose</text>
+    <text x="477" y="1060" fill="#85859A" font-family="Arial,sans-serif" font-size="13">Turn intentions into clear,</text>
+    <text x="477" y="1082" fill="#85859A" font-family="Arial,sans-serif" font-size="13">manageable next steps.</text>
+    <rect x="790" y="929" width="310" height="213" rx="20" fill="#F8F7FC"/>
+    <circle cx="837" cy="977" r="23" fill="#F2EAF8"/>
+    <path d="m837 964 4 9 9 4-9 4-4 9-4-9-9-4 9-4 4-9Z" fill="#936FC1"/>
+    <text x="822" y="1030" fill="#373A56" font-family="Arial,sans-serif" font-size="17" font-weight="700">AI that works with you</text>
+    <text x="822" y="1060" fill="#85859A" font-family="Arial,sans-serif" font-size="13">Useful assistance, with you</text>
+    <text x="822" y="1082" fill="#85859A" font-family="Arial,sans-serif" font-size="13">always in control.</text>
+    <rect x="78" y="1202" width="1044" height="437" rx="28" fill="#F7F6FC"/>
+    <text x="123" y="1277" fill="#292D49" font-family="Arial,sans-serif" font-size="31" font-weight="700">From idea to next step</text>
+    <text x="123" y="1311" fill="#85859A" font-family="Arial,sans-serif" font-size="14">Move from a note to a clear next action.</text>
+    <circle cx="150" cy="1390" r="19" fill="#E8E5FA"/>
+    <text x="144" y="1396" fill="#7165CE" font-family="Arial,sans-serif" font-size="14" font-weight="700">1</text>
+    <text x="189" y="1386" fill="#41445E" font-family="Arial,sans-serif" font-size="16" font-weight="700">Capture your ideas</text>
+    <text x="189" y="1412" fill="#89899D" font-family="Arial,sans-serif" font-size="13">Save notes and references as they come.</text>
+    <path d="M150 1419v48" stroke="#D8D5EB" stroke-width="2" stroke-dasharray="4 6"/>
+    <circle cx="150" cy="1493" r="19" fill="#E5F3EF"/>
+    <text x="144" y="1499" fill="#348D7E" font-family="Arial,sans-serif" font-size="14" font-weight="700">2</text>
+    <text x="189" y="1489" fill="#41445E" font-family="Arial,sans-serif" font-size="16" font-weight="700">Find your next step</text>
+    <text x="189" y="1515" fill="#89899D" font-family="Arial,sans-serif" font-size="13">Shape a plan that feels clear and achievable.</text>
+    <path d="M150 1522v48" stroke="#D8D5EB" stroke-width="2" stroke-dasharray="4 6"/>
+    <circle cx="150" cy="1596" r="19" fill="#F2EAF8"/>
+    <text x="144" y="1602" fill="#936FC1" font-family="Arial,sans-serif" font-size="14" font-weight="700">3</text>
+    <text x="189" y="1592" fill="#41445E" font-family="Arial,sans-serif" font-size="16" font-weight="700">Make space for focus</text>
+    <text x="189" y="1618" fill="#89899D" font-family="Arial,sans-serif" font-size="13">Keep distractions out of your way.</text>
+    <rect x="666" y="1340" width="407" height="248" rx="20" fill="#fff" stroke="#EAE8F1"/>
+    <rect x="691" y="1367" width="108" height="8" rx="4" fill="#343650"/>
+    <rect x="691" y="1390" width="327" height="6" rx="3" fill="#C5C5D0"/>
+    <rect x="691" y="1407" width="292" height="6" rx="3" fill="#C5C5D0"/>
+    <rect x="691" y="1441" width="356" height="93" rx="14" fill="#F7F6FC"/>
+    <circle cx="720" cy="1471" r="14" fill="#E7E4F8"/>
+    <path d="m720 1463 2 6 6 2-6 2-2 6-2-6-6-2 6-2 2-6Z" fill="#7164CE"/>
+    <rect x="746" y="1468" width="176" height="6" rx="3" fill="#565872"/>
+    <rect x="746" y="1483" width="260" height="5" rx="2.5" fill="#A8A8B9"/>
+    <rect x="746" y="1498" width="229" height="5" rx="2.5" fill="#A8A8B9"/>
+    <rect x="691" y="1550" width="119" height="22" rx="11" fill="#EAE8F9"/>
+    <text x="710" y="1565" fill="#6F65C4" font-family="Arial,sans-serif" font-size="10" font-weight="700">READY TO FOCUS</text>
+    <text x="100" y="1766" fill="#292D49" font-family="Arial,sans-serif" font-size="32" font-weight="700">Your work, in a clearer space</text>
+    <text x="100" y="1800" fill="#85859A" font-family="Arial,sans-serif" font-size="14">A focused workspace with room to make it your own.</text>
+    <rect x="100" y="1843" width="1000" height="159" rx="23" fill="#F1F0FA"/>
+    <circle cx="170" cy="1922" r="32" fill="#fff"/>
+    <path d="m170 1907 4 10 11 5-11 4-4 11-5-11-10-4 10-5 5-10Z" fill="#796BD4"/>
+    <text x="226" y="1908" fill="#373A56" font-family="Arial,sans-serif" font-size="18" font-weight="700">AI support, on your terms</text>
+    <text x="226" y="1937" fill="#85859A" font-family="Arial,sans-serif" font-size="14">Ask for help, refine the response, and decide what to use.</text>
+    <rect x="226" y="1954" width="176" height="27" rx="13.5" fill="#fff"/>
+    <text x="245" y="1972" fill="#7268C3" font-family="Arial,sans-serif" font-size="11" font-weight="600">Your choices stay yours</text>
+    <rect x="100" y="2072" width="1000" height="205" rx="26" fill="#292653"/>
+    <circle cx="1020" cy="2100" r="113" fill="#8C83E5" fill-opacity=".12"/>
+    <text x="151" y="2143" fill="#fff" font-family="Arial,sans-serif" font-size="30" font-weight="700">Bring your next idea into focus.</text>
+    <text x="151" y="2181" fill="#C5C3DE" font-family="Arial,sans-serif" font-size="15">Start with a note, then build a plan that works for you.</text>
+    <rect x="151" y="2210" width="153" height="44" rx="22" fill="#C8F0F1"/>
+    <text x="181" y="2238" fill="#292653" font-family="Arial,sans-serif" font-size="13" font-weight="700">Explore Orbit</text>
+    <path d="M96 2321h1008" stroke="#E9E8F0"/>
+    <text x="100" y="2364" fill="#343650" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="1">ORBIT</text>
+    <text x="100" y="2390" fill="#89899D" font-family="Arial,sans-serif" font-size="11">Notes, plans, and AI in one workspace.</text>
+    <text x="791" y="2364" fill="#77788F" font-family="Arial,sans-serif" font-size="12">Product</text>
+    <text x="868" y="2364" fill="#77788F" font-family="Arial,sans-serif" font-size="12">How it works</text>
+    <text x="980" y="2364" fill="#77788F" font-family="Arial,sans-serif" font-size="12">About</text>
+    <text x="1031" y="2364" fill="#77788F" font-family="Arial,sans-serif" font-size="12">Help</text>
+  </g>
+</svg>

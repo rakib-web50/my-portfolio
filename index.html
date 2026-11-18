@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MD Rakib Hossain is a Software Engineer and Computer Science & Engineering graduate focused on full-stack web development, WordPress, and practical AI integration."
+    />
+    <title>MD Rakib Hossain — Software Engineer</title>
+    <meta name="theme-color" content="#f3f7fa" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Outfit", "system-ui", "sans-serif"],
+              serif: ["Fraunces", "Georgia", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body id="top" class="font-sans antialiased">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-stone-950 focus:px-4 focus:py-2 focus:text-sm focus:text-white"
+    >
+      Skip to content
+    </a>
+
+    <header class="navbar-enter sticky top-0 z-50 border-b border-stone-200/80 bg-stone-50/85 backdrop-blur-md">
+      <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6 sm:py-4 lg:px-8">
+        <a href="#top" class="brand-link flex min-w-0 items-center gap-3 text-stone-950">
+          <span class="brand-mark flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-teal-950 font-serif text-sm text-white">MR</span>
+          <span class="min-w-0">
+            <span class="block font-serif text-base leading-tight tracking-tight sm:text-lg">MD Rakib Hossain</span>
+            <span class="mt-0.5 block text-[10px] font-medium uppercase tracking-[0.16em] text-stone-500">Software Engineering</span>
+          </span>
+        </a>
+
+        <nav class="hidden items-center gap-5 text-sm text-stone-600 lg:flex lg:gap-8" aria-label="Primary">
+          <a class="transition hover:text-stone-950" href="#about">About</a>
+          <a class="transition hover:text-stone-950" href="#skills">Skills</a>
+          <a class="transition hover:text-stone-950" href="#experience">Experience</a>
+          <a class="transition hover:text-stone-950" href="#projects">Projects</a>
+          <a
+            class="rounded-full bg-stone-950 px-4 py-2 text-white transition hover:bg-teal-900"
+            href="#contact"
+          >
+            Contact
+          </a>
+        </nav>
+
+        <details class="relative shrink-0 lg:hidden">
+          <summary
+            class="cursor-pointer rounded-full border border-stone-300 px-3 py-1.5 text-sm text-stone-800"
+          >
+            Menu
+          </summary>
+          <nav
+            class="absolute right-0 mt-3 w-44 rounded-2xl border border-stone-200 bg-white p-2 shadow-lg"
+            aria-label="Mobile"
+          >
+            <a class="block rounded-xl px-3 py-2 hover:bg-stone-100" href="#about">About</a>
+            <a class="block rounded-xl px-3 py-2 hover:bg-stone-100" href="#skills">Skills</a>
+            <a class="block rounded-xl px-3 py-2 hover:bg-stone-100" href="#experience">Experience</a>
+            <a class="block rounded-xl px-3 py-2 hover:bg-stone-100" href="#projects">Projects</a>
+            <a class="block rounded-xl px-3 py-2 hover:bg-stone-100" href="#contact">Contact</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero-section px-4 pb-16 pt-12 sm:px-6 sm:pb-20 sm:pt-16 lg:px-8 lg:pb-24 lg:pt-20" aria-labelledby="hero-heading">
+        <div class="mx-auto grid max-w-6xl items-end gap-10 sm:gap-12 md:grid-cols-12">
+          <div class="rise md:col-span-8">
+            <p class="hero-eyebrow inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-medium uppercase tracking-[0.12em] sm:text-sm sm:tracking-[0.15em]">
+              <span class="h-2 w-2 rounded-full bg-teal-300" aria-hidden="true"></span>
+              Software Engineer · CSE graduate
+            </p>
+            <h1
+              id="hero-heading"
+              class="hero-title mt-5 font-serif text-4xl leading-[1.02] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
+            >
+              MD Rakib Hossain
+            </h1>
+            <p class="hero-role mt-4 text-xl sm:text-2xl">Software Engineer <span>at</span> SKF Pharmaceuticals</p>
+            <p class="hero-copy mt-6 max-w-2xl text-lg leading-relaxed">
+              I’m a software engineer and Computer Science &amp; Engineering graduate focused on
+              building useful, reliable digital solutions. My work includes full-stack web
+              development, WordPress, and practical AI tools and integrations.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a
+                href="#about"
+                class="button-primary rounded-full px-5 py-3 text-sm font-medium transition"
+              >
+                Explore my background
+              </a>
+              <a
+                href="#skills"
+                class="button-secondary rounded-full border px-5 py-3 text-sm font-medium transition"
+              >
+                View my expertise
+              </a>
+            </div>
+            <div class="hero-facts mt-9 flex flex-wrap gap-x-10 gap-y-4 border-t pt-6">
+              <div>
+                <p class="hero-fact-label text-[10px] font-medium uppercase tracking-[0.18em]">Education</p>
+                <p class="mt-1 text-sm font-medium">B.Sc. Computer Science &amp; Engineering</p>
+              </div>
+              <div>
+                <p class="hero-fact-label text-[10px] font-medium uppercase tracking-[0.18em]">Current role</p>
+                <p class="mt-1 text-sm font-medium">Software Engineer · SKF Pharmaceuticals</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="rise rise-delay mx-auto w-full max-w-[16rem] sm:max-w-xs md:col-span-4 md:mx-0 md:max-w-none">
+            <div class="profile-card rounded-3xl border border-stone-200 bg-white p-4 shadow-sm sm:p-5">
+              <div
+                class="profile-art relative flex aspect-[4/5] items-end overflow-hidden rounded-2xl bg-gradient-to-br from-teal-800 via-teal-950 to-stone-950 p-6 sm:p-8"
+                aria-hidden="true"
+              >
+                <span class="profile-orbit absolute right-[-12%] top-[10%] h-48 w-48 rounded-full border border-white/15 sm:h-64 sm:w-64"></span>
+                <span class="profile-orbit profile-orbit-delay absolute right-[8%] top-[28%] h-32 w-32 rounded-full border border-white/20 sm:h-44 sm:w-44"></span>
+                <div class="relative">
+                  <p class="text-xs font-medium uppercase tracking-[0.2em] text-teal-100">Technology · Growth · Impact</p>
+                  <p class="mt-3 font-serif text-5xl text-white sm:text-6xl">MRH<span class="text-teal-300">.</span></p>
+                  <p class="mt-2 text-sm text-stone-200">Computer Science &amp; Engineering</p>
+                </div>
+              </div>
+              <div class="profile-caption flex items-center justify-between gap-3 px-2 pb-1 pt-4 text-sm">
+                <span class="text-stone-500">Currently</span>
+                <span class="font-medium text-stone-900">Software Engineer</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="scroll-mt-24 border-t border-stone-200 px-4 py-16 sm:px-6 sm:py-20 lg:px-8" aria-labelledby="about-heading">
+        <div class="mx-auto grid max-w-6xl gap-10 md:grid-cols-12 md:gap-16">
+          <div class="md:col-span-4">
+            <p class="section-label text-sm font-medium uppercase tracking-[0.18em] text-teal-800">About</p>
+            <h2 id="about-heading" class="section-heading mt-3 font-serif text-4xl text-stone-950">A little about me</h2>
+          </div>
+          <div class="about-copy space-y-5 text-lg leading-relaxed text-stone-600 md:col-span-8">
+            <p>
+              I’m MD Rakib Hossain, a Software Engineer and Computer Science &amp; Engineering
+              graduate (2022). My experience includes full-stack web development, WordPress, and
+              practical AI tools and integrations.
+            </p>
+            <p>
+              I value thoughtful design, practical solutions, clear communication, and continued
+              learning.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="scroll-mt-24 border-t border-stone-200 px-4 py-16 sm:px-6 sm:py-20 lg:px-8" aria-labelledby="skills-heading">
+        <div class="mx-auto max-w-6xl">
+          <p class="section-label text-sm font-medium uppercase tracking-[0.18em] text-teal-800">Capabilities</p>
+          <h2 id="skills-heading" class="section-heading mt-3 max-w-xl font-serif text-4xl text-stone-950">
+            Software engineering &amp; web development
+          </h2>
+          <p class="mt-4 max-w-2xl text-lg text-stone-600">
+            A closer look at my software engineering work and web development experience.
+          </p>
+
+          <ul class="mt-10 grid items-start gap-5 sm:grid-cols-2 xl:grid-cols-4">
+            <li class="snapshot-card expertise-card rounded-2xl border border-stone-200 bg-white p-6">
+              <span class="snapshot-icon flex h-11 w-11 items-center justify-center rounded-xl bg-teal-50 text-lg text-teal-900" aria-hidden="true">01</span>
+              <p class="mt-6 text-xs font-medium uppercase tracking-[0.16em] text-teal-800">Professional focus</p>
+              <h3 class="mt-3 font-serif text-2xl text-stone-950">Software Engineering</h3>
+              <p class="mt-2 text-sm leading-relaxed text-stone-600">Building, testing, and improving software to solve practical problems.</p>
+              <button class="expertise-more-button" type="button" aria-haspopup="dialog" aria-controls="software-engineering-dialog">
+                <span>Read more</span><span class="expertise-arrow" aria-hidden="true">↗</span>
+              </button>
+              <dialog class="expertise-dialog" id="software-engineering-dialog" aria-labelledby="software-engineering-dialog-title">
+                <div class="expertise-dialog-panel">
+                  <div class="expertise-dialog-header project-dialog-header">
+                    <div>
+                      <p class="expertise-dialog-label">Professional focus</p>
+                      <h3 id="software-engineering-dialog-title">Software Engineering</h3>
+                    </div>
+                    <button class="expertise-dialog-close" type="button" aria-label="Close details" autofocus>
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <p class="expertise-dialog-intro">Build and improve software by understanding requirements, implementing solutions, and checking that they work as intended.</p>
+                  <ul class="expertise-dialog-list">
+                    <li>Translate practical needs into clear software features.</li>
+                    <li>Write, test, and maintain reliable application code.</li>
+                    <li>Investigate issues and refine solutions over time.</li>
+                  </ul>
+                </div>
+              </dialog>
+            </li>
+            <li class="snapshot-card expertise-card rounded-2xl border border-stone-200 bg-white p-6">
+              <span class="snapshot-icon flex h-11 w-11 items-center justify-center rounded-xl bg-teal-50 text-lg text-teal-900" aria-hidden="true">02</span>
+              <p class="mt-6 text-xs font-medium uppercase tracking-[0.16em] text-teal-800">Artificial intelligence</p>
+              <h3 class="mt-3 font-serif text-2xl text-stone-950">AI Tools &amp; Integration</h3>
+              <p class="mt-2 text-sm leading-relaxed text-stone-600">Applying AI tools and integrations to practical digital solutions.</p>
+              <button class="expertise-more-button" type="button" aria-haspopup="dialog" aria-controls="ai-integration-dialog">
+                <span>Read more</span><span class="expertise-arrow" aria-hidden="true">↗</span>
+              </button>
+              <dialog class="expertise-dialog" id="ai-integration-dialog" aria-labelledby="ai-integration-dialog-title">
+                <div class="expertise-dialog-panel">
+                  <div class="expertise-dialog-header">
+                    <div>
+                      <p class="expertise-dialog-label">Artificial intelligence</p>
+                      <h3 id="ai-integration-dialog-title">AI Tools &amp; Integration</h3>
+                    </div>
+                    <button class="expertise-dialog-close" type="button" aria-label="Close details" autofocus>
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <p class="expertise-dialog-intro">Use AI capabilities to streamline routine tasks and add practical features to digital workflows.</p>
+                  <ul class="expertise-dialog-list">
+                    <li>Apply AI tools to research, drafting, and problem-solving.</li>
+                    <li>Explore integrations that support useful workflow automation.</li>
+                    <li>Review and refine generated results for quality and relevance.</li>
+                  </ul>
+                </div>
+              </dialog>
+            </li>
+            <li class="snapshot-card expertise-card rounded-2xl border border-stone-200 bg-white p-6">
+              <span class="snapshot-icon flex h-11 w-11 items-center justify-center rounded-xl bg-teal-50 text-lg text-teal-900" aria-hidden="true">03</span>
+              <p class="mt-6 text-xs font-medium uppercase tracking-[0.16em] text-teal-800">WordPress</p>
+              <h3 class="mt-3 font-serif text-2xl text-stone-950">WordPress Development</h3>
+              <p class="mt-2 text-sm leading-relaxed text-stone-600">Developing and maintaining websites with WordPress.</p>
+              <button class="expertise-more-button" type="button" aria-haspopup="dialog" aria-controls="wordpress-dialog">
+                <span>Read more</span><span class="expertise-arrow" aria-hidden="true">↗</span>
+              </button>
+              <dialog class="expertise-dialog" id="wordpress-dialog" aria-labelledby="wordpress-dialog-title">
+                <div class="expertise-dialog-panel">
+                  <div class="expertise-dialog-header">
+                    <div>
+                      <p class="expertise-dialog-label">WordPress</p>
+                      <h3 id="wordpress-dialog-title">WordPress Development</h3>
+                    </div>
+                    <button class="expertise-dialog-close" type="button" aria-label="Close details" autofocus>
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <p class="expertise-dialog-intro">Develop and maintain WordPress websites, tailoring their layout and functionality to project needs.</p>
+                  <ul class="expertise-dialog-list">
+                    <li>Create and customize pages and layouts.</li>
+                    <li>Configure themes and plugins to extend site functionality.</li>
+                    <li>Manage content and maintain a consistent site presentation.</li>
+                  </ul>
+                </div>
+              </dialog>
+            </li>
+            <li class="snapshot-card expertise-card rounded-2xl border border-stone-200 bg-white p-6">
+              <span class="snapshot-icon flex h-11 w-11 items-center justify-center rounded-xl bg-teal-50 text-lg text-teal-900" aria-hidden="true">04</span>
+              <p class="mt-6 text-xs font-medium uppercase tracking-[0.16em] text-teal-800">Full stack</p>
+              <h3 class="mt-3 font-serif text-2xl text-stone-950">Full-Stack Web Development</h3>
+              <p class="mt-2 text-sm leading-relaxed text-stone-600">Building web features across the front end and back end.</p>
+              <button class="expertise-more-button" type="button" aria-haspopup="dialog" aria-controls="fullstack-dialog">
+                <span>Read more</span><span class="expertise-arrow" aria-hidden="true">↗</span>
+              </button>
+              <dialog class="expertise-dialog" id="fullstack-dialog" aria-labelledby="fullstack-dialog-title">
+                <div class="expertise-dialog-panel">
+                  <div class="expertise-dialog-header">
+                    <div>
+                      <p class="expertise-dialog-label">Full stack</p>
+                      <h3 id="fullstack-dialog-title">Full-Stack Web Development</h3>
+                    </div>
+                    <button class="expertise-dialog-close" type="button" aria-label="Close details" autofocus>
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <p class="expertise-dialog-intro">Build complete web experiences by connecting responsive interfaces with server-side functionality and data.</p>
+                  <ul class="expertise-dialog-list">
+                    <li>Develop responsive front-end pages.</li>
+                    <li>Implement backend application logic and data handling.</li>
+                    <li>Test end-to-end flows and refine functionality.</li>
+                  </ul>
+                </div>
+              </dialog>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experience" class="engineering-section scroll-mt-24 border-t border-stone-200 px-4 py-16 sm:px-6 sm:py-20 lg:px-8" aria-labelledby="experience-heading">
+        <div class="mx-auto max-w-6xl">
+          <div class="engineering-section-heading">
+            <div>
+              <p class="section-label text-sm font-medium uppercase tracking-[0.18em] text-teal-800">Engineering profile</p>
+              <h2 id="experience-heading" class="section-heading mt-3 font-serif text-4xl text-stone-950">Engineering at a glance</h2>
+            </div>
+            <p class="engineering-intro">
+              I build software with a focus on clear code and reliable results—from understanding
+              requirements to testing and refining each solution.
+            </p>
+          </div>
+
+          <div class="engineering-grid mt-9">
+            <article class="engineering-stat-card" aria-labelledby="engineering-projects-title">
+              <p class="engineering-card-eyebrow">Project experience</p>
+              <h3 class="engineering-stat-value" id="engineering-projects-title" aria-label="More than 30 projects completed">
+                30<span aria-hidden="true">+</span><span class="sr-only"> projects completed</span>
+              </h3>
+              <p class="engineering-stat-description">
+                Completed projects across software development, application features, and web solutions.
+              </p>
+            </article>
+
+            <div class="engineering-details">
+              <article class="engineering-panel" aria-labelledby="technology-stack-heading">
+                <p class="engineering-panel-label">Core technologies</p>
+                <h3 id="technology-stack-heading">Technologies I work with</h3>
+                <ul class="technology-list" aria-label="Technologies">
+                  <li>C</li>
+                  <li>C++</li>
+                  <li>Java</li>
+                  <li>JavaScript</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>PHP</li>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>WordPress</li>
+                  <li>MongoDB</li>
+                  <li>Databases</li>
+                  <li>Git</li>
+                  <li>AI APIs</li>
+                </ul>
+              </article>
+
+              <article class="engineering-panel" aria-labelledby="responsibilities-heading">
+                <p class="engineering-panel-label">Core responsibilities</p>
+                <h3 id="responsibilities-heading">Software engineering in practice</h3>
+                <ul class="responsibility-list">
+                  <li>Understand requirements and turn them into practical software features.</li>
+                  <li>Design, develop, and maintain application functionality.</li>
+                  <li>Write clear, maintainable code using appropriate engineering practices.</li>
+                  <li>Test software, debug issues, and improve reliability and performance.</li>
+                  <li>Use MongoDB to organize and work with application data.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="scroll-mt-24 border-t border-stone-200 px-4 py-16 sm:px-6 sm:py-20 lg:px-8" aria-labelledby="projects-heading">
+        <div class="mx-auto max-w-6xl">
+          <div class="project-section-heading">
+            <div>
+              <p class="section-label text-sm font-medium uppercase tracking-[0.18em] text-teal-800">Selected concepts</p>
+              <h2 id="projects-heading" class="section-heading mt-3 font-serif text-4xl text-stone-950">Our Projects</h2>
+            </div>
+            <p class="project-intro max-w-xl text-lg leading-relaxed text-stone-600">
+              Three independent website concepts across healthcare, productivity, and skincare—each
+              shaped around a distinct audience and purpose.
+            </p>
+          </div>
+
+          <p class="project-disclaimer" id="project-note">
+            Independent concept work created for this portfolio; these are not client commissions.
+          </p>
+
+          <div class="project-gallery mt-9" aria-describedby="project-note">
+            <article class="project-card">
+              <div class="project-card-visual">
+                <img
+                  src="images/careflow-homepage.svg"
+                  alt="Careflow Clinic website concept featuring care services and appointment information"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="project-concept-badge">Concept 01</span>
+              </div>
+              <div class="project-card-content">
+                <p class="project-card-category">Healthcare · Digital experience</p>
+                <h3>Careflow Clinic</h3>
+                <p>
+                  A clinic website concept that helps patients find the right care and book a visit
+                  with confidence.
+                </p>
+                <div class="project-card-tags" aria-label="Project themes">
+                  <span>Patient experience</span>
+                  <span>Clinic website</span>
+                </div>
+                <button class="project-open-button" type="button" aria-haspopup="dialog" aria-controls="careflow-dialog">
+                  <span>View concept</span><span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-visual">
+                <img
+                  src="images/orbit-homepage.svg"
+                  alt="Orbit AI product website concept with a workspace preview and feature overview"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="project-concept-badge">Concept 02</span>
+              </div>
+              <div class="project-card-content">
+                <p class="project-card-category">AI productivity · Product website</p>
+                <h3>Orbit AI Workspace</h3>
+                <p>
+                  A product website concept for an AI workspace that brings notes, plans, and project
+                  context together.
+                </p>
+                <div class="project-card-tags" aria-label="Project themes">
+                  <span>AI workspace</span>
+                  <span>Product design</span>
+                </div>
+                <button class="project-open-button" type="button" aria-haspopup="dialog" aria-controls="orbit-dialog">
+                  <span>View concept</span><span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-visual">
+                <img
+                  src="images/maison-homepage.svg"
+                  alt="Maison Form skincare storefront concept with featured products and shopping links"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="project-concept-badge">Concept 03</span>
+              </div>
+              <div class="project-card-content">
+                <p class="project-card-category">Skincare · E-commerce</p>
+                <h3>Maison Form</h3>
+                <p>
+                  A skincare storefront concept that pairs a distinct brand identity with clear,
+                  straightforward product discovery.
+                </p>
+                <div class="project-card-tags" aria-label="Project themes">
+                  <span>Brand experience</span>
+                  <span>Online store</span>
+                </div>
+                <button class="project-open-button" type="button" aria-haspopup="dialog" aria-controls="maison-dialog">
+                  <span>View concept</span><span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <dialog class="expertise-dialog project-dialog" id="careflow-dialog" aria-labelledby="careflow-dialog-title">
+            <div class="expertise-dialog-panel project-dialog-panel">
+              <div class="expertise-dialog-header project-dialog-header">
+                <div>
+                  <p class="expertise-dialog-label">Independent concept · Healthcare</p>
+                  <h3 id="careflow-dialog-title">Careflow Clinic</h3>
+                </div>
+                <button class="expertise-dialog-close" type="button" aria-label="Close project details" autofocus>
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="project-dialog-scroll">
+              <p class="project-preview-label">Full-page preview · Scroll to explore</p>
+              <img
+                class="project-dialog-image"
+                src="images/careflow-homepage.svg"
+                alt="Full Careflow Clinic website concept, from the welcome section and services to the final appointment call to action"
+              />
+              <details class="project-dialog-details">
+                <summary>Concept notes <span aria-hidden="true">+</span></summary>
+                <div>
+                  <p class="expertise-dialog-intro">
+                    A patient-centred website concept for a local clinic, with clear routes
+                    to services, clinician information, and appointment booking.
+                  </p>
+                  <h4 class="project-dialog-subheading">Design highlights</h4>
+                  <ul class="expertise-dialog-list">
+                    <li>Services and appointment options are easy to find from the first screen.</li>
+                    <li>Clinician profiles introduce the people behind the practice.</li>
+                    <li>A consistent visual system carries through to the final call to action.</li>
+                  </ul>
+                  <p class="project-dialog-note">Independent concept study · Not a live clinic service.</p>
+                </div>
+              </details>
+              </div>
+            </div>
+          </dialog>
+
+          <dialog class="expertise-dialog project-dialog" id="orbit-dialog" aria-labelledby="orbit-dialog-title">
+            <div class="expertise-dialog-panel project-dialog-panel">
+              <div class="expertise-dialog-header project-dialog-header">
+                <div>
+                  <p class="expertise-dialog-label">Independent concept · AI productivity</p>
+                  <h3 id="orbit-dialog-title">Orbit AI Workspace</h3>
+                </div>
+                <button class="expertise-dialog-close" type="button" aria-label="Close project details" autofocus>
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="project-dialog-scroll">
+              <p class="project-preview-label">Full-page preview · Scroll to explore</p>
+              <img
+                class="project-dialog-image"
+                src="images/orbit-homepage.svg"
+                alt="Full Orbit AI product website concept, from its introduction and workspace preview to feature highlights"
+              />
+              <details class="project-dialog-details">
+                <summary>Concept notes <span aria-hidden="true">+</span></summary>
+                <div>
+                  <p class="expertise-dialog-intro">
+                    A product-site concept for Orbit, a workspace that brings notes, planning, and
+                    project context together.
+                  </p>
+                  <h4 class="project-dialog-subheading">Design highlights</h4>
+                  <ul class="expertise-dialog-list">
+                    <li>A concise introduction explains the product before showing the interface.</li>
+                    <li>The workspace preview shows how notes and tasks fit together.</li>
+                    <li>Feature summaries explain the balance between focus and user control.</li>
+                  </ul>
+                  <p class="project-dialog-note">Independent concept study · Not a live AI product.</p>
+                </div>
+              </details>
+              </div>
+            </div>
+          </dialog>
+
+          <dialog class="expertise-dialog project-dialog" id="maison-dialog" aria-labelledby="maison-dialog-title">
+            <div class="expertise-dialog-panel project-dialog-panel">
+              <div class="expertise-dialog-header project-dialog-header">
+                <div>
+                  <p class="expertise-dialog-label">Independent concept · Skincare retail</p>
+                  <h3 id="maison-dialog-title">Maison Form</h3>
+                </div>
+                <button class="expertise-dialog-close" type="button" aria-label="Close project details" autofocus>
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="project-dialog-scroll">
+              <p class="project-preview-label">Full-page preview · Scroll to explore</p>
+              <img
+                class="project-dialog-image"
+                src="images/maison-homepage.svg"
+                alt="Full Maison Form skincare storefront concept, from its brand introduction and featured products to its shopping call to action"
+              />
+              <details class="project-dialog-details">
+                <summary>Concept notes <span aria-hidden="true">+</span></summary>
+                <div>
+                  <p class="expertise-dialog-intro">
+                    A storefront concept for a modern skincare label, built around product discovery
+                    and a simple daily routine.
+                  </p>
+                  <h4 class="project-dialog-subheading">Design highlights</h4>
+                  <ul class="expertise-dialog-list">
+                    <li>Featured products sit alongside a concise brand introduction.</li>
+                    <li>Routine guidance helps visitors navigate the product range.</li>
+                    <li>Consistent styling connects brand information with the shopping experience.</li>
+                  </ul>
+                  <p class="project-dialog-note">Independent concept study · Not a live online store.</p>
+                </div>
+              </details>
+              </div>
+            </div>
+          </dialog>
+        </div>
+      </section>
+
+      <section id="contact" class="scroll-mt-24 border-t border-stone-200 px-4 py-16 sm:px-6 sm:py-20 lg:px-8" aria-labelledby="contact-heading">
+        <div class="mx-auto grid max-w-6xl gap-10 sm:gap-12 lg:grid-cols-12">
+          <div class="lg:col-span-5">
+            <p class="section-label text-sm font-medium uppercase tracking-[0.18em] text-teal-800">Contact</p>
+            <h2 id="contact-heading" class="section-heading mt-3 font-serif text-4xl text-stone-950">Let’s connect</h2>
+            <p class="mt-4 text-lg leading-relaxed text-stone-600">
+              I welcome conversations about software engineering opportunities, web projects, and collaboration.
+              Get in touch or explore my work on GitHub.
+            </p>
+          </div>
+
+          <div class="contact-panel flex flex-col justify-center rounded-3xl border border-stone-200 bg-white p-7 shadow-sm sm:p-9 lg:col-span-7">
+            <p class="text-xs font-medium uppercase tracking-[0.16em] text-teal-800">Contact details</p>
+            <h3 class="mt-3 font-serif text-2xl text-stone-950">Let’s build something useful</h3>
+            <p class="mt-3 max-w-xl leading-relaxed text-stone-600">
+              The best way to reach me is by email. You can also browse my projects and code on
+              GitHub.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a
+                class="contact-primary inline-flex items-center gap-2 rounded-full bg-stone-950 px-5 py-3 text-sm font-medium text-white transition hover:bg-teal-900"
+                href="mailto:rakibcse250@gmail.com"
+              >
+                Email me <span aria-hidden="true">↗</span>
+              </a>
+              <a
+                class="contact-secondary inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white px-5 py-3 text-sm font-medium text-stone-900 transition hover:border-stone-400"
+                href="https://github.com/rakib-web50/my-portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <a class="mt-5 w-fit text-sm text-stone-600 underline decoration-stone-300 underline-offset-4 transition hover:text-stone-950" href="mailto:rakibcse250@gmail.com">
+              rakibcse250@gmail.com
+            </a>
+            <form id="subscription-form" class="subscription-form mt-7 border-t border-white/10 pt-6" novalidate>
+              <label for="subscriber-email" class="block text-sm font-medium">Get project updates</label>
+              <p class="mt-1 text-sm text-stone-400">Subscribe to receive new project and portfolio updates.</p>
+              <div class="mt-4 flex flex-col gap-3 sm:flex-row">
+                <input
+                  id="subscriber-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  aria-describedby="subscription-status"
+                  class="subscription-email min-w-0 flex-1 rounded-full border px-5 py-3 text-sm outline-none transition"
+                  placeholder="Enter your email"
+                />
+                <button
+                  type="submit"
+                  class="subscription-button inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-medium"
+                >
+                  <span class="subscription-button-label">Subscribe</span>
+                  <span class="subscription-button-spinner hidden" aria-hidden="true"></span>
+                </button>
+              </div>
+              <p id="subscription-status" class="mt-3 min-h-5 text-sm" role="status" aria-live="polite"></p>
+              <p class="mt-1 text-xs text-stone-400">No spam. Your email is stored only in this browser until a backend is connected.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-stone-200 px-4 py-8 sm:px-6 lg:px-8">
+      <div class="mx-auto flex max-w-6xl flex-col gap-2 text-sm text-stone-500 sm:flex-row sm:items-center sm:justify-between">
+        <p>© 2026 MD Rakib Hossain <span class="text-stone-400">·</span> Software Engineering</p>
+        <a class="transition hover:text-stone-950" href="#top">Back to top</a>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

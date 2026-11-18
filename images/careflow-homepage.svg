@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 2600" fill="none">
+  <defs>
+    <linearGradient id="care-bg" x1="40" y1="40" x2="1140" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E3F0F5"/>
+      <stop offset="1" stop-color="#E8E9F8"/>
+    </linearGradient>
+    <linearGradient id="care-card" x1="694" y1="216" x2="1077" y2="568" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D9EFF3"/>
+      <stop offset="1" stop-color="#DADCF5"/>
+    </linearGradient>
+    <filter id="care-shadow" x="0" y="0" width="1200" height="2600" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="16"/>
+      <feOffset dy="10"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".13"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="2600" fill="url(#care-bg)"/>
+  <circle cx="1095" cy="111" r="185" fill="#A8D9DF" fill-opacity=".26"/>
+  <circle cx="84" cy="754" r="178" fill="#B7B6ED" fill-opacity=".18"/>
+  <g filter="url(#care-shadow)">
+    <rect x="34" y="30" width="1132" height="2540" rx="26" fill="#fff"/>
+    <path d="M34 56a26 26 0 0 1 26-26h1080a26 26 0 0 1 26 26v28H34V56Z" fill="#FBFCFE"/>
+    <circle cx="62" cy="57" r="6" fill="#F28C8C"/>
+    <circle cx="82" cy="57" r="6" fill="#F4C66A"/>
+    <circle cx="102" cy="57" r="6" fill="#78C7A5"/>
+    <rect x="422" y="45" width="354" height="23" rx="11.5" fill="#F0F4F7"/>
+    <path d="M34 84h1132" stroke="#E8EEF1"/>
+    <circle cx="116" cy="126" r="18" fill="#1C7187"/>
+    <path d="M116 117v18m-9-9h18" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="146" y="133" fill="#19384B" font-family="Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="1">CAREFLOW</text>
+    <text x="575" y="130" fill="#657985" font-family="Arial,sans-serif" font-size="14">Care</text>
+    <text x="646" y="130" fill="#657985" font-family="Arial,sans-serif" font-size="14">Our services</text>
+    <text x="756" y="130" fill="#657985" font-family="Arial,sans-serif" font-size="14">Find a doctor</text>
+    <text x="875" y="130" fill="#657985" font-family="Arial,sans-serif" font-size="14">About us</text>
+    <rect x="974" y="105" width="148" height="42" rx="21" fill="#176F83"/>
+    <text x="1003" y="131" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700">Book a visit</text>
+    <rect x="99" y="197" width="196" height="29" rx="14.5" fill="#E8F4F3"/>
+    <circle cx="117" cy="211" r="5" fill="#258A88"/>
+    <text x="132" y="216" fill="#397B79" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.1">CARE THAT LISTENS</text>
+    <text x="97" y="296" fill="#18374B" font-family="Arial,sans-serif" font-size="53" font-weight="700">Care, built around</text>
+    <text x="97" y="357" fill="#18374B" font-family="Arial,sans-serif" font-size="53" font-weight="700">your needs.</text>
+    <text x="100" y="401" fill="#657985" font-family="Arial,sans-serif" font-size="17">Good care starts with a team who listens.</text>
+    <text x="100" y="428" fill="#657985" font-family="Arial,sans-serif" font-size="17">Find trusted support at every stage of life.</text>
+    <rect x="99" y="465" width="155" height="48" rx="24" fill="#176F83"/>
+    <text x="124" y="494" fill="#fff" font-family="Arial,sans-serif" font-size="14" font-weight="700">Book an appointment</text>
+    <rect x="268" y="465" width="137" height="48" rx="24" fill="#fff" stroke="#DDE8EC"/>
+    <text x="296" y="494" fill="#345A6C" font-family="Arial,sans-serif" font-size="14" font-weight="600">Meet our doctors</text>
+    <circle cx="113" cy="570" r="16" fill="#DDF0F0"/>
+    <path d="m106 570 5 5 10-11" stroke="#278A88" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="140" y="567" fill="#25495B" font-family="Arial,sans-serif" font-size="13" font-weight="700">Care you can count on</text>
+    <text x="140" y="587" fill="#8A9AA2" font-family="Arial,sans-serif" font-size="12">Here for you, every day</text>
+    <rect x="695" y="185" width="384" height="354" rx="28" fill="url(#care-card)"/>
+    <circle cx="968" cy="270" r="119" fill="#fff" fill-opacity=".38"/>
+    <circle cx="798" cy="474" r="91" fill="#B2D8DD" fill-opacity=".48"/>
+    <rect x="790" y="263" width="190" height="234" rx="88" fill="#F9F8F3"/>
+    <path d="M838 325c0-38 21-62 49-62 31 0 52 24 52 62v34H838v-34Z" fill="#405E76"/>
+    <circle cx="887" cy="347" r="43" fill="#D99D7C"/>
+    <path d="M844 347c-2-36 17-70 47-70 34 0 49 27 48 62-12-10-25-18-43-20-10 15-27 24-52 28Z" fill="#2C4052"/>
+    <path d="M817 472c11-64 39-94 70-94 34 0 63 29 76 94" fill="#fff"/>
+    <path d="M860 389 887 423l27-34" stroke="#7BB8B9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M887 423v57" stroke="#7BB8B9" stroke-width="8" stroke-linecap="round"/>
+    <rect x="917" y="402" width="37" height="37" rx="11" fill="#fff"/>
+    <path d="M935 411v19m-9-9.5h19" stroke="#318994" stroke-width="3" stroke-linecap="round"/>
+    <rect x="944" y="203" width="170" height="73" rx="16" fill="#fff"/>
+    <circle cx="970" cy="239" r="16" fill="#E4F3F3"/>
+    <path d="M970 230v18m-9-9h18" stroke="#298796" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="997" y="235" fill="#29485A" font-family="Arial,sans-serif" font-size="12" font-weight="700">Friendly care</text>
+    <text x="997" y="253" fill="#8999A1" font-family="Arial,sans-serif" font-size="11">A team that listens</text>
+    <rect x="705" y="464" width="207" height="64" rx="16" fill="#fff"/>
+    <circle cx="733" cy="496" r="15" fill="#FFF1E3"/>
+    <path d="M733 487v9l6 4" stroke="#D89557" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="759" y="491" fill="#29485A" font-family="Arial,sans-serif" font-size="12" font-weight="700">Appointments that fit</text>
+    <text x="759" y="509" fill="#8999A1" font-family="Arial,sans-serif" font-size="11">Care on your schedule</text>
+    <path d="M96 628h1008" stroke="#E8EEF1"/>
+    <text x="100" y="671" fill="#1C3D51" font-family="Arial,sans-serif" font-size="18" font-weight="700">Care for every stage of life</text>
+    <text x="100" y="697" fill="#84949D" font-family="Arial,sans-serif" font-size="12">Support for your health, at every age</text>
+    <rect x="100" y="716" width="295" height="40" rx="12" fill="#F7FAFC"/>
+    <circle cx="122" cy="736" r="10" fill="#DDF0F0"/>
+    <path d="M122 730v12m-6-6h12" stroke="#318994" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="143" y="741" fill="#4B6573" font-family="Arial,sans-serif" font-size="12" font-weight="600">Primary care</text>
+    <rect x="413" y="716" width="295" height="40" rx="12" fill="#F7FAFC"/>
+    <circle cx="435" cy="736" r="10" fill="#E8E8FA"/>
+    <path d="M431 736h8m-4-4v8" stroke="#7378C7" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="456" y="741" fill="#4B6573" font-family="Arial,sans-serif" font-size="12" font-weight="600">Specialist visits</text>
+    <rect x="726" y="716" width="360" height="40" rx="12" fill="#F7FAFC"/>
+    <circle cx="748" cy="736" r="10" fill="#FDEDDD"/>
+    <path d="M744 739c2-7 6-7 8 0m-4-5v-2" stroke="#D48B57" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="769" y="741" fill="#4B6573" font-family="Arial,sans-serif" font-size="12" font-weight="600">Family health</text>
+    <path d="M96 795h1008" stroke="#E8EEF1"/>
+    <text x="100" y="858" fill="#1C3D51" font-family="Arial,sans-serif" font-size="34" font-weight="700">Support for everyday health</text>
+    <text x="100" y="891" fill="#84949D" font-family="Arial,sans-serif" font-size="15">Personal care, from routine visits to specialist support.</text>
+    <rect x="100" y="927" width="310" height="223" rx="20" fill="#F7FAFC"/>
+    <circle cx="146" cy="977" r="23" fill="#DDF0F0"/>
+    <path d="M146 965v24m-12-12h24" stroke="#318994" stroke-width="3" stroke-linecap="round"/>
+    <text x="130" y="1030" fill="#25495B" font-family="Arial,sans-serif" font-size="17" font-weight="700">Everyday care</text>
+    <text x="130" y="1060" fill="#7B8C96" font-family="Arial,sans-serif" font-size="13">For checkups, questions, and</text>
+    <text x="130" y="1082" fill="#7B8C96" font-family="Arial,sans-serif" font-size="13">the care that keeps you well.</text>
+    <text x="130" y="1120" fill="#247C8C" font-family="Arial,sans-serif" font-size="12" font-weight="700">EXPLORE CARE  →</text>
+    <rect x="445" y="927" width="310" height="223" rx="20" fill="#F7FAFC"/>
+    <circle cx="491" cy="977" r="23" fill="#E8E8FA"/>
+    <path d="M481 978h20m-10-10v20" stroke="#7378C7" stroke-width="3" stroke-linecap="round"/>
+    <text x="475" y="1030" fill="#25495B" font-family="Arial,sans-serif" font-size="17" font-weight="700">Expert doctors</text>
+    <text x="475" y="1060" fill="#7B8C96" font-family="Arial,sans-serif" font-size="13">Get matched with people who</text>
+    <text x="475" y="1082" fill="#7B8C96" font-family="Arial,sans-serif" font-size="13">listen and understand.</text>
+    <text x="475" y="1120" fill="#247C8C" font-family="Arial,sans-serif" font-size="12" font-weight="700">MEET THE TEAM  →</text>
+    <rect x="790" y="927" width="310" height="223" rx="20" fill="#F7FAFC"/>
+    <circle cx="836" cy="977" r="23" fill="#FFF1E3"/>
+    <circle cx="836" cy="974" r="8" stroke="#D89557" stroke-width="2.5"/>
+    <path d="M823 990c2-10 24-10 26 0" stroke="#D89557" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="820" y="1030" fill="#25495B" font-family="Arial,sans-serif" font-size="17" font-weight="700">Family health</text>
+    <text x="820" y="1060" fill="#7B8C96" font-family="Arial,sans-serif" font-size="13">Care and guidance for you</text>
+    <text x="820" y="1082" fill="#7B8C96" font-family="Arial,sans-serif" font-size="13">and the people you love.</text>
+    <text x="820" y="1120" fill="#247C8C" font-family="Arial,sans-serif" font-size="12" font-weight="700">LEARN MORE  →</text>
+    <rect x="78" y="1210" width="1044" height="426" rx="28" fill="#F4F8FA"/>
+    <text x="122" y="1281" fill="#1C3D51" font-family="Arial,sans-serif" font-size="32" font-weight="700">Meet the people behind your care</text>
+    <text x="122" y="1314" fill="#84949D" font-family="Arial,sans-serif" font-size="14">A kind, experienced team ready to listen.</text>
+    <rect x="123" y="1350" width="283" height="238" rx="18" fill="#fff"/>
+    <circle cx="264" cy="1426" r="48" fill="#DCEEF0"/>
+    <circle cx="264" cy="1416" r="20" fill="#D99D7C"/>
+    <path d="M226 1451c8-26 22-38 38-38 18 0 33 12 41 38" fill="#46677B"/>
+    <text x="177" y="1508" fill="#274658" font-family="Arial,sans-serif" font-size="16" font-weight="700">Dr. Maya Rahman</text>
+    <text x="187" y="1532" fill="#87969D" font-family="Arial,sans-serif" font-size="12">Family medicine</text>
+    <rect x="458" y="1350" width="283" height="238" rx="18" fill="#fff"/>
+    <circle cx="599" cy="1426" r="48" fill="#ECEBFA"/>
+    <circle cx="599" cy="1416" r="20" fill="#C88867"/>
+    <path d="M561 1451c8-26 22-38 38-38 18 0 33 12 41 38" fill="#7D78AB"/>
+    <text x="519" y="1508" fill="#274658" font-family="Arial,sans-serif" font-size="16" font-weight="700">Dr. Omar Hasan</text>
+    <text x="521" y="1532" fill="#87969D" font-family="Arial,sans-serif" font-size="12">Heart health</text>
+    <rect x="793" y="1350" width="283" height="238" rx="18" fill="#fff"/>
+    <circle cx="934" cy="1426" r="48" fill="#FCEDE3"/>
+    <circle cx="934" cy="1416" r="20" fill="#DAA27E"/>
+    <path d="M896 1451c8-26 22-38 38-38 18 0 33 12 41 38" fill="#6F9D91"/>
+    <text x="863" y="1508" fill="#274658" font-family="Arial,sans-serif" font-size="16" font-weight="700">Dr. Lina Ahmed</text>
+    <text x="865" y="1532" fill="#87969D" font-family="Arial,sans-serif" font-size="12">Children’s care</text>
+    <text x="100" y="1741" fill="#1C3D51" font-family="Arial,sans-serif" font-size="32" font-weight="700">Your next visit, made simple</text>
+    <text x="100" y="1774" fill="#84949D" font-family="Arial,sans-serif" font-size="14">A clear path from choosing care to meeting your doctor.</text>
+    <rect x="100" y="1815" width="1000" height="151" rx="22" fill="#EAF4F5"/>
+    <circle cx="166" cy="1890" r="31" fill="#fff"/>
+    <text x="157" y="1897" fill="#247C8C" font-family="Arial,sans-serif" font-size="18" font-weight="700">1</text>
+    <text x="216" y="1876" fill="#25495B" font-family="Arial,sans-serif" font-size="17" font-weight="700">Choose your care</text>
+    <text x="216" y="1904" fill="#748892" font-family="Arial,sans-serif" font-size="13">Find a service and the right specialist.</text>
+    <path d="M470 1890h87" stroke="#A8C9CC" stroke-width="2" stroke-dasharray="5 7"/>
+    <circle cx="605" cy="1890" r="31" fill="#fff"/>
+    <text x="596" y="1897" fill="#247C8C" font-family="Arial,sans-serif" font-size="18" font-weight="700">2</text>
+    <text x="655" y="1876" fill="#25495B" font-family="Arial,sans-serif" font-size="17" font-weight="700">Pick a time</text>
+    <text x="655" y="1904" fill="#748892" font-family="Arial,sans-serif" font-size="13">Choose an appointment that works for you.</text>
+    <path d="M881 1890h58" stroke="#A8C9CC" stroke-width="2" stroke-dasharray="5 7"/>
+    <circle cx="981" cy="1890" r="31" fill="#fff"/>
+    <text x="972" y="1897" fill="#247C8C" font-family="Arial,sans-serif" font-size="18" font-weight="700">3</text>
+    <text x="100" y="2083" fill="#1C3D51" font-family="Arial,sans-serif" font-size="32" font-weight="700">Here when you need us</text>
+    <text x="100" y="2117" fill="#84949D" font-family="Arial,sans-serif" font-size="14">Take the next step toward care that feels right for you.</text>
+    <rect x="100" y="2161" width="1000" height="204" rx="26" fill="#163A4D"/>
+    <circle cx="1009" cy="2206" r="106" fill="#58B4C0" fill-opacity=".12"/>
+    <text x="150" y="2234" fill="#fff" font-family="Arial,sans-serif" font-size="30" font-weight="700">Start with a conversation.</text>
+    <text x="150" y="2270" fill="#B7D0D9" font-family="Arial,sans-serif" font-size="15">Talk with our team about your next visit.</text>
+    <rect x="150" y="2300" width="174" height="43" rx="21.5" fill="#B5EDF2"/>
+    <text x="176" y="2327" fill="#12364A" font-family="Arial,sans-serif" font-size="13" font-weight="700">Book an appointment</text>
+    <path d="M96 2409h1008" stroke="#E8EEF1"/>
+    <text x="100" y="2452" fill="#29485A" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing=".8">CAREFLOW</text>
+    <text x="100" y="2477" fill="#84949D" font-family="Arial,sans-serif" font-size="11">Care for every stage of life.</text>
+    <text x="807" y="2452" fill="#748892" font-family="Arial,sans-serif" font-size="12">Care</text>
+    <text x="868" y="2452" fill="#748892" font-family="Arial,sans-serif" font-size="12">Our services</text>
+    <text x="965" y="2452" fill="#748892" font-family="Arial,sans-serif" font-size="12">Find a doctor</text>
+    <text x="1054" y="2452" fill="#748892" font-family="Arial,sans-serif" font-size="12">Contact</text>
+  </g>
+</svg>

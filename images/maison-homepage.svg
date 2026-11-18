@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 2600" fill="none">
+  <defs>
+    <linearGradient id="maison-bg" x1="45" y1="40" x2="1150" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6EEE6"/>
+      <stop offset="1" stop-color="#EBE9DF"/>
+    </linearGradient>
+    <linearGradient id="maison-product" x1="729" y1="182" x2="1051" y2="573" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DEE8D9"/>
+      <stop offset="1" stop-color="#BFCFBA"/>
+    </linearGradient>
+    <filter id="maison-shadow" x="0" y="0" width="1200" height="2600" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="16"/>
+      <feOffset dy="10"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".12"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="2600" fill="url(#maison-bg)"/>
+  <circle cx="1080" cy="110" r="188" fill="#D5DFD1" fill-opacity=".45"/>
+  <circle cx="93" cy="751" r="164" fill="#E7CABB" fill-opacity=".27"/>
+  <g filter="url(#maison-shadow)">
+    <rect x="34" y="30" width="1132" height="2540" rx="26" fill="#FFFEFC"/>
+    <path d="M34 56a26 26 0 0 1 26-26h1080a26 26 0 0 1 26 26v28H34V56Z" fill="#FCFAF7"/>
+    <circle cx="62" cy="57" r="6" fill="#F28C8C"/>
+    <circle cx="82" cy="57" r="6" fill="#F4C66A"/>
+    <circle cx="102" cy="57" r="6" fill="#78C7A5"/>
+    <rect x="422" y="45" width="354" height="23" rx="11.5" fill="#F0EDE7"/>
+    <path d="M34 84h1132" stroke="#ECE8E1"/>
+    <text x="99" y="133" fill="#25382E" font-family="Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="1.2">MAISON FORM</text>
+    <text x="574" y="130" fill="#777F72" font-family="Arial,sans-serif" font-size="14">Shop all</text>
+    <text x="654" y="130" fill="#777F72" font-family="Arial,sans-serif" font-size="14">Our philosophy</text>
+    <text x="785" y="130" fill="#777F72" font-family="Arial,sans-serif" font-size="14">Journal</text>
+    <circle cx="1003" cy="123" r="13" fill="#F1EFE8"/>
+    <path d="M997 123h12m-6-6 6 6-6 6" stroke="#596552" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="1040" y="103" width="82" height="39" rx="19.5" fill="#30483A"/>
+    <text x="1061" y="128" fill="#fff" font-family="Arial,sans-serif" font-size="12" font-weight="700">Bag (0)</text>
+    <rect x="99" y="190" width="210" height="28" rx="14" fill="#EEF1E9"/>
+    <circle cx="117" cy="204" r="4.5" fill="#74866E"/>
+    <text x="132" y="209" fill="#697B64" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1">SKINCARE, SIMPLIFIED</text>
+    <text x="97" y="296" fill="#283B30" font-family="Arial,sans-serif" font-size="52" font-weight="700">A softer kind</text>
+    <text x="97" y="357" fill="#283B30" font-family="Arial,sans-serif" font-size="52" font-weight="700">of everyday care.</text>
+    <text x="100" y="402" fill="#7B8175" font-family="Arial,sans-serif" font-size="17">Skincare essentials for a simple, steady routine.</text>
+    <rect x="99" y="467" width="139" height="47" rx="23.5" fill="#30483A"/>
+    <text x="132" y="496" fill="#fff" font-family="Arial,sans-serif" font-size="14" font-weight="700">Shop essentials</text>
+    <rect x="253" y="467" width="154" height="47" rx="23.5" fill="#fff" stroke="#E4E6DD"/>
+    <text x="282" y="496" fill="#53634F" font-family="Arial,sans-serif" font-size="14" font-weight="600">Our approach</text>
+    <circle cx="113" cy="576" r="15" fill="#EFF3EB"/>
+    <path d="m106 576 5 5 9-10" stroke="#73856C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="139" y="573" fill="#475647" font-family="Arial,sans-serif" font-size="13" font-weight="700">Gentle by design</text>
+    <text x="139" y="593" fill="#95988A" font-family="Arial,sans-serif" font-size="12">Made for everyday use</text>
+    <rect x="685" y="174" width="401" height="388" rx="30" fill="url(#maison-product)"/>
+    <circle cx="1006" cy="237" r="112" fill="#fff" fill-opacity=".3"/>
+    <ellipse cx="881" cy="511" rx="144" ry="19" fill="#64745E" fill-opacity=".16"/>
+    <rect x="767" y="337" width="69" height="145" rx="18" fill="#F1E5D2"/>
+    <rect x="779" y="313" width="45" height="31" rx="9" fill="#C8B28D"/>
+    <rect x="790" y="297" width="23" height="20" rx="6" fill="#9A815F"/>
+    <rect x="776" y="385" width="51" height="52" rx="9" fill="#FFFCF5"/>
+    <text x="785" y="405" fill="#74806B" font-family="Arial,sans-serif" font-size="7" font-weight="700" letter-spacing=".5">MAISON</text>
+    <text x="786" y="419" fill="#74806B" font-family="Arial,sans-serif" font-size="6">DAILY CLEANSER</text>
+    <rect x="862" y="261" width="98" height="222" rx="24" fill="#F8F3E9"/>
+    <rect x="883" y="234" width="56" height="35" rx="10" fill="#D7C7A7"/>
+    <rect x="895" y="217" width="32" height="23" rx="7" fill="#9B886C"/>
+    <rect x="875" y="350" width="72" height="73" rx="12" fill="#E4E7D9"/>
+    <text x="888" y="376" fill="#697762" font-family="Arial,sans-serif" font-size="8" font-weight="700" letter-spacing=".6">MAISON</text>
+    <text x="885" y="394" fill="#697762" font-family="Arial,sans-serif" font-size="7">DAILY MOISTURE</text>
+    <rect x="986" y="343" width="57" height="139" rx="17" fill="#CBD7C4"/>
+    <rect x="998" y="320" width="33" height="28" rx="8" fill="#96A58D"/>
+    <rect x="995" y="388" width="39" height="49" rx="9" fill="#F8F7EF"/>
+    <text x="1002" y="408" fill="#73806C" font-family="Arial,sans-serif" font-size="6" font-weight="700">MAISON</text>
+    <text x="1002" y="421" fill="#73806C" font-family="Arial,sans-serif" font-size="5">FACE OIL</text>
+    <rect x="724" y="465" width="205" height="71" rx="17" fill="#fff"/>
+    <circle cx="753" cy="500" r="15" fill="#F3EADB"/>
+    <path d="M753 491v18m-6-12h12" stroke="#A9906B" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="779" y="496" fill="#435442" font-family="Arial,sans-serif" font-size="11" font-weight="700">Simple ingredients</text>
+    <text x="779" y="514" fill="#929588" font-family="Arial,sans-serif" font-size="10">Made for everyday rituals</text>
+    <path d="M96 636h1008" stroke="#ECE8E1"/>
+    <text x="100" y="678" fill="#304236" font-family="Arial,sans-serif" font-size="18" font-weight="700">Essentials for your daily routine</text>
+    <text x="100" y="703" fill="#94968A" font-family="Arial,sans-serif" font-size="12">A simple place to start</text>
+    <rect x="100" y="720" width="300" height="37" rx="12" fill="#F7F6F1"/>
+    <circle cx="122" cy="738" r="9" fill="#E7EADD"/>
+    <path d="M118 738h8m-4-4v8" stroke="#78866D" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="143" y="742" fill="#586552" font-family="Arial,sans-serif" font-size="11" font-weight="600">Cleanse gently</text>
+    <rect x="414" y="720" width="300" height="37" rx="12" fill="#F7F6F1"/>
+    <circle cx="436" cy="738" r="9" fill="#F2E9DA"/>
+    <path d="M432 741c1-6 7-6 8 0m-4-4v-3" stroke="#A58B65" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="457" y="742" fill="#586552" font-family="Arial,sans-serif" font-size="11" font-weight="600">Restore moisture</text>
+    <rect x="728" y="720" width="358" height="37" rx="12" fill="#F7F6F1"/>
+    <circle cx="750" cy="738" r="9" fill="#E3EADD"/>
+    <path d="M750 732v12m-5-7 5 7 5-7" stroke="#78866D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="771" y="742" fill="#586552" font-family="Arial,sans-serif" font-size="11" font-weight="600">Shop the collection</text>
+    <path d="M96 795h1008" stroke="#ECE8E1"/>
+    <text x="100" y="858" fill="#304236" font-family="Arial,sans-serif" font-size="34" font-weight="700">The essentials, made simple</text>
+    <text x="100" y="891" fill="#929589" font-family="Arial,sans-serif" font-size="15">A simple routine for everyday skincare.</text>
+    <rect x="100" y="928" width="310" height="246" rx="20" fill="#F8F7F2"/>
+    <circle cx="255" cy="1002" r="52" fill="#E8ECDD"/>
+    <rect x="231" y="975" width="48" height="66" rx="14" fill="#F1E5D2"/>
+    <rect x="241" y="964" width="28" height="16" rx="6" fill="#C8B28D"/>
+    <text x="143" y="1080" fill="#455744" font-family="Arial,sans-serif" font-size="16" font-weight="700">The gentle cleanse</text>
+    <text x="143" y="1107" fill="#929588" font-family="Arial,sans-serif" font-size="12">A soft start to your routine.</text>
+    <text x="143" y="1147" fill="#65755F" font-family="Arial,sans-serif" font-size="12" font-weight="700">DISCOVER  →</text>
+    <rect x="445" y="928" width="310" height="246" rx="20" fill="#F8F7F2"/>
+    <circle cx="600" cy="1002" r="52" fill="#EFE8D8"/>
+    <rect x="576" y="967" width="48" height="76" rx="14" fill="#F8F3E9"/>
+    <rect x="587" y="953" width="26" height="20" rx="7" fill="#D7C7A7"/>
+    <text x="488" y="1080" fill="#455744" font-family="Arial,sans-serif" font-size="16" font-weight="700">Daily moisture</text>
+    <text x="488" y="1107" fill="#929588" font-family="Arial,sans-serif" font-size="12">Comfort that lasts all day.</text>
+    <text x="488" y="1147" fill="#65755F" font-family="Arial,sans-serif" font-size="12" font-weight="700">DISCOVER  →</text>
+    <rect x="790" y="928" width="310" height="246" rx="20" fill="#F8F7F2"/>
+    <circle cx="945" cy="1002" r="52" fill="#E3EADD"/>
+    <rect x="925" y="970" width="40" height="74" rx="13" fill="#CBD7C4"/>
+    <rect x="934" y="957" width="22" height="17" rx="6" fill="#96A58D"/>
+    <text x="833" y="1080" fill="#455744" font-family="Arial,sans-serif" font-size="16" font-weight="700">The finishing touch</text>
+    <text x="833" y="1107" fill="#929588" font-family="Arial,sans-serif" font-size="12">Nourish with a lighter feel.</text>
+    <text x="833" y="1147" fill="#65755F" font-family="Arial,sans-serif" font-size="12" font-weight="700">DISCOVER  →</text>
+    <rect x="78" y="1232" width="1044" height="427" rx="28" fill="#F4F4ED"/>
+    <circle cx="331" cy="1435" r="141" fill="#E0E6D8"/>
+    <ellipse cx="327" cy="1546" rx="132" ry="17" fill="#75836C" fill-opacity=".12"/>
+    <rect x="254" y="1365" width="61" height="144" rx="18" fill="#F0E3D0"/>
+    <rect x="267" y="1341" width="35" height="30" rx="9" fill="#C5AE89"/>
+    <rect x="327" y="1326" width="82" height="183" rx="22" fill="#F9F4E9"/>
+    <rect x="347" y="1301" width="42" height="32" rx="10" fill="#D2C2A2"/>
+    <rect x="427" y="1382" width="52" height="127" rx="16" fill="#CBD7C4"/>
+    <rect x="439" y="1361" width="28" height="25" rx="8" fill="#96A58D"/>
+    <text x="622" y="1361" fill="#73806A" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1">OUR PHILOSOPHY</text>
+    <text x="622" y="1415" fill="#304236" font-family="Arial,sans-serif" font-size="31" font-weight="700">Only what your</text>
+    <text x="622" y="1455" fill="#304236" font-family="Arial,sans-serif" font-size="31" font-weight="700">routine needs.</text>
+    <text x="622" y="1502" fill="#7B8175" font-family="Arial,sans-serif" font-size="14">A useful routine doesn't need to be complicated.</text>
+    <text x="622" y="1528" fill="#7B8175" font-family="Arial,sans-serif" font-size="14">Our essentials are made with care, comfort, and</text>
+    <text x="622" y="1554" fill="#7B8175" font-family="Arial,sans-serif" font-size="14">everyday use in mind.</text>
+    <text x="622" y="1601" fill="#65755F" font-family="Arial,sans-serif" font-size="12" font-weight="700">GET TO KNOW US  →</text>
+    <text x="100" y="1763" fill="#304236" font-family="Arial,sans-serif" font-size="32" font-weight="700">Build a routine that works for you</text>
+    <text x="100" y="1797" fill="#929589" font-family="Arial,sans-serif" font-size="14">A few simple steps, morning or evening.</text>
+    <rect x="100" y="1841" width="310" height="190" rx="19" fill="#F8F7F2"/>
+    <circle cx="146" cy="1892" r="20" fill="#E5EADD"/>
+    <text x="140" y="1898" fill="#65755F" font-family="Arial,sans-serif" font-size="14" font-weight="700">1</text>
+    <text x="132" y="1943" fill="#455744" font-family="Arial,sans-serif" font-size="16" font-weight="700">Cleanse gently</text>
+    <text x="132" y="1971" fill="#929588" font-family="Arial,sans-serif" font-size="12">Start with a fresh, comfortable feel.</text>
+    <rect x="445" y="1841" width="310" height="190" rx="19" fill="#F8F7F2"/>
+    <circle cx="491" cy="1892" r="20" fill="#F0E9DA"/>
+    <text x="485" y="1898" fill="#9B835F" font-family="Arial,sans-serif" font-size="14" font-weight="700">2</text>
+    <text x="477" y="1943" fill="#455744" font-family="Arial,sans-serif" font-size="16" font-weight="700">Restore moisture</text>
+    <text x="477" y="1971" fill="#929588" font-family="Arial,sans-serif" font-size="12">Give your skin daily hydration.</text>
+    <rect x="790" y="1841" width="310" height="190" rx="19" fill="#F8F7F2"/>
+    <circle cx="836" cy="1892" r="20" fill="#E3EADD"/>
+    <text x="830" y="1898" fill="#65755F" font-family="Arial,sans-serif" font-size="14" font-weight="700">3</text>
+    <text x="822" y="1943" fill="#455744" font-family="Arial,sans-serif" font-size="16" font-weight="700">Finish with a few drops</text>
+    <text x="822" y="1971" fill="#929588" font-family="Arial,sans-serif" font-size="12">Apply as the final step in your routine.</text>
+    <rect x="100" y="2100" width="1000" height="208" rx="26" fill="#30483A"/>
+    <circle cx="1018" cy="2130" r="114" fill="#DCE8D8" fill-opacity=".1"/>
+    <text x="151" y="2173" fill="#fff" font-family="Arial,sans-serif" font-size="30" font-weight="700">Make your routine your own.</text>
+    <text x="151" y="2211" fill="#D3DDD0" font-family="Arial,sans-serif" font-size="15">Find the essentials for a routine that suits you.</text>
+    <rect x="151" y="2240" width="160" height="44" rx="22" fill="#E4EBDD"/>
+    <text x="181" y="2268" fill="#30483A" font-family="Arial,sans-serif" font-size="13" font-weight="700">Shop essentials</text>
+    <path d="M96 2354h1008" stroke="#ECE8E1"/>
+    <text x="100" y="2397" fill="#435442" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="1">MAISON FORM</text>
+    <text x="100" y="2423" fill="#929588" font-family="Arial,sans-serif" font-size="11">Simple essentials for daily care.</text>
+    <text x="785" y="2397" fill="#777F72" font-family="Arial,sans-serif" font-size="12">Shop all</text>
+    <text x="862" y="2397" fill="#777F72" font-family="Arial,sans-serif" font-size="12">Our philosophy</text>
+    <text x="982" y="2397" fill="#777F72" font-family="Arial,sans-serif" font-size="12">Journal</text>
+    <text x="1045" y="2397" fill="#777F72" font-family="Arial,sans-serif" font-size="12">Contact</text>
+  </g>
+</svg>
