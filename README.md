@@ -11,7 +11,7 @@ npm ci
 npm run build
 ```
 
-The generated Tailwind stylesheet is committed so GitHub Pages can serve the site without a build step. After changing Tailwind classes, run the build and commit the updated `css/tailwind.generated.css`.
+The generated Tailwind stylesheet is committed so GitHub Pages can serve the site without a build step. After changing Tailwind classes, run the build and commit the updated `assets/css/tailwind.generated.css`.
 
 ## Email updates
 
