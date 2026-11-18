@@ -1,3 +1,18 @@
+const translatePortfolioMessage = window.portfolioTranslate || function (message) {
+  return message;
+};
+
+function setTranslatedText(element, message) {
+  element.dataset.translationKey = message;
+  element.textContent = translatePortfolioMessage(message);
+}
+
+document.addEventListener("portfolio-language-change", function () {
+  for (const element of document.querySelectorAll("[data-translation-key]")) {
+    element.textContent = translatePortfolioMessage(element.dataset.translationKey);
+  }
+});
+
 // The phone menu is the <details> element in the header.
 // The browser already opens and closes it when Menu is clicked.
 // This file adds the extra cases the browser does not handle.
@@ -16,7 +31,9 @@ if (menu) {
   }
 
   function updateMenuLabel() {
-    menuButton.textContent = menu.open ? "Close" : "Menu";
+    const label = menu.open ? "Close" : "Menu";
+    menuButton.dataset.translationKey = label;
+    menuButton.textContent = translatePortfolioMessage(label);
   }
 
   for (const link of menuLinks) {
@@ -159,6 +176,7 @@ if (subscriptionForm) {
 
     if (status.classList.contains("subscription-status-error")) {
       status.textContent = "";
+      delete status.dataset.translationKey;
       status.className = "mt-3 min-h-5 text-sm";
     }
   });
@@ -172,7 +190,7 @@ if (subscriptionForm) {
     if (!email || !emailInput.checkValidity()) {
       emailInput.setAttribute("aria-invalid", "true");
       status.classList.add("subscription-status-error");
-      status.textContent = "Please enter a valid email address.";
+      setTranslatedText(status, "Please enter a valid email address.");
       emailInput.focus();
       return;
     }
@@ -198,7 +216,7 @@ if (subscriptionForm) {
     } catch (error) {
       console.error("Could not read saved subscription data.", error);
       status.classList.add("subscription-status-error");
-      status.textContent = "Could not access saved email data. Check your browser storage settings and try again.";
+      setTranslatedText(status, "Could not access saved email data. Check your browser storage settings and try again.");
       return;
     }
 
@@ -212,13 +230,13 @@ if (subscriptionForm) {
 
     if (existingSubscriber) {
       status.classList.add("subscription-status-info");
-      status.textContent = "This email is already saved in this browser. Email updates are not active yet.";
+      setTranslatedText(status, "This email is already saved in this browser. Email updates are not active yet.");
       emailInput.select();
       return;
     }
 
     submitButton.disabled = true;
-    buttonLabel.textContent = "Subscribing";
+    setTranslatedText(buttonLabel, "Subscribing");
     buttonSpinner.classList.remove("hidden");
 
     window.setTimeout(function () {
@@ -229,21 +247,21 @@ if (subscriptionForm) {
         });
         localStorage.setItem(subscribersKey, JSON.stringify(subscribers));
         status.classList.add("subscription-status-success");
-        status.textContent = "Saved in this browser only. Email updates are not active yet.";
+        setTranslatedText(status, "Saved in this browser only. Email updates are not active yet.");
         emailInput.value = "";
-        buttonLabel.textContent = "Saved";
+        setTranslatedText(buttonLabel, "Saved");
       } catch (error) {
         console.error("Could not save subscription data.", error);
         status.classList.add("subscription-status-error");
-        status.textContent = "Could not save your email in this browser. Check storage settings and try again.";
-        buttonLabel.textContent = "Subscribe";
+        setTranslatedText(status, "Could not save your email in this browser. Check storage settings and try again.");
+        setTranslatedText(buttonLabel, "Subscribe");
       } finally {
         submitButton.disabled = false;
         buttonSpinner.classList.add("hidden");
       }
 
       window.setTimeout(function () {
-        buttonLabel.textContent = "Subscribe";
+        setTranslatedText(buttonLabel, "Subscribe");
       }, 1800);
     }, 650);
   });

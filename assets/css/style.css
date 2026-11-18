@@ -1739,3 +1739,62 @@ button:focus-visible {
     transform: none;
   }
 }
+
+.language-switcher:not(.hidden) {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.2rem;
+  border: 1px solid #e7e5e4;
+  border-radius: 9999px;
+  background: #fff;
+}
+
+.language-button {
+  min-width: 2.45rem;
+  padding: 0.4rem 0.65rem;
+  border: 0;
+  border-radius: 9999px;
+  background: transparent;
+  color: #57534e;
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.language-button:hover {
+  color: #0f3f3c;
+}
+
+.language-button[aria-pressed="true"] {
+  background: #0f3f3c;
+  color: #fff;
+}
+
+.language-button:focus-visible {
+  outline: 2px solid #0f766e;
+  outline-offset: 2px;
+}
+
+.language-button:active {
+  transform: scale(0.96);
+}
+
+.language-switcher-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  padding: 0.75rem 0.75rem 0.25rem;
+  border-top: 1px solid #f5f5f4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .language-button {
+    transition: none;
+  }
+}

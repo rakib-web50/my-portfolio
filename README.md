@@ -13,6 +13,10 @@ npm run build
 
 The generated Tailwind stylesheet is committed so GitHub Pages can serve the site without a build step. After changing Tailwind classes, run the build and commit the updated `assets/css/tailwind.generated.css`.
 
+## Languages
+
+Visitors can switch between English and Bengali using the language control in the navigation. Their choice is saved in the current browser.
+
 ## Email updates
 
 The subscription form currently stores addresses in the visitor's browser only. It does not send email or notify the site owner; a backend or email-marketing provider must be configured for real subscriptions.

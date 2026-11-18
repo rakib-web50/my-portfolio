@@ -62,6 +62,11 @@
           </a>
         </nav>
 
+        <div class="language-switcher hidden lg:flex" role="group" aria-label="Choose language">
+          <button class="language-button" type="button" data-language="en" lang="en" aria-pressed="true">EN</button>
+          <button class="language-button" type="button" data-language="bn" lang="bn" aria-pressed="false">বাংলা</button>
+        </div>
+
         <details class="relative shrink-0 lg:hidden">
           <summary
             class="cursor-pointer rounded-full border border-stone-300 px-3 py-1.5 text-sm text-stone-800"
@@ -77,6 +82,13 @@
             <a class="block rounded-xl px-3 py-2 hover:bg-stone-100" href="#experience">Experience</a>
             <a class="block rounded-xl px-3 py-2 hover:bg-stone-100" href="#projects">Projects</a>
             <a class="block rounded-xl px-3 py-2 hover:bg-stone-100" href="#contact">Contact</a>
+            <div class="language-switcher-mobile">
+              <span class="text-xs font-medium uppercase tracking-wide text-stone-500">Language</span>
+              <div class="language-switcher" role="group" aria-label="Choose language">
+                <button class="language-button" type="button" data-language="en" lang="en" aria-pressed="true">EN</button>
+                <button class="language-button" type="button" data-language="bn" lang="bn" aria-pressed="false">বাংলা</button>
+              </div>
+            </div>
           </nav>
         </details>
       </div>
@@ -649,6 +661,7 @@
         <a class="transition hover:text-stone-950" href="#top">Back to top</a>
       </div>
     </footer>
+    <script src="assets/js/language.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
