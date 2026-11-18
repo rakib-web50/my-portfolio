@@ -173,17 +173,15 @@ if (subscriptionForm) {
 
   emailInput.addEventListener("input", function () {
     emailInput.setAttribute("aria-invalid", "false");
-
-    if (status.classList.contains("subscription-status-error")) {
-      status.textContent = "";
-      delete status.dataset.translationKey;
-      status.className = "mt-3 min-h-5 text-sm";
-    }
+    status.textContent = "";
+    delete status.dataset.translationKey;
+    status.className = "mt-3 min-h-5 text-sm";
   });
 
-  subscriptionForm.addEventListener("submit", function (event) {
+  subscriptionForm.addEventListener("submit", async function (event) {
     event.preventDefault();
     const email = emailInput.value.trim();
+    emailInput.value = email;
     status.className = "mt-3 min-h-5 text-sm";
     emailInput.setAttribute("aria-invalid", "false");
 
@@ -195,43 +193,11 @@ if (subscriptionForm) {
       return;
     }
 
-    const subscribersKey = "portfolioSubscribers";
-    let subscribers;
+    const endpoint = subscriptionForm.action;
 
-    try {
-      const savedSubscribers = localStorage.getItem(subscribersKey);
-      subscribers = savedSubscribers ? JSON.parse(savedSubscribers) : [];
-
-      if (
-        !Array.isArray(subscribers) ||
-        subscribers.some(function (subscriber) {
-          return (
-            typeof subscriber !== "string" &&
-            (!subscriber || typeof subscriber.email !== "string")
-          );
-        })
-      ) {
-        throw new Error("Saved subscription data has an unexpected format.");
-      }
-    } catch (error) {
-      console.error("Could not read saved subscription data.", error);
+    if (endpoint.includes("YOUR_FORM_ID")) {
       status.classList.add("subscription-status-error");
-      setTranslatedText(status, "Could not access saved email data. Check your browser storage settings and try again.");
-      return;
-    }
-
-    const normalizedEmail = email.toLowerCase();
-
-    const existingSubscriber = subscribers.find(function (subscriber) {
-      return typeof subscriber === "string"
-        ? subscriber === normalizedEmail
-        : subscriber.email.toLowerCase() === normalizedEmail;
-    });
-
-    if (existingSubscriber) {
-      status.classList.add("subscription-status-info");
-      setTranslatedText(status, "This email is already saved in this browser. Email updates are not active yet.");
-      emailInput.select();
+      setTranslatedText(status, "Subscription is not configured yet. Replace YOUR_FORM_ID with your Formspree form ID.");
       return;
     }
 
@@ -239,31 +205,34 @@ if (subscriptionForm) {
     setTranslatedText(buttonLabel, "Subscribing");
     buttonSpinner.classList.remove("hidden");
 
-    window.setTimeout(function () {
-      try {
-        subscribers.push({
-          email: normalizedEmail,
-          subscribedAt: new Date().toISOString(),
-        });
-        localStorage.setItem(subscribersKey, JSON.stringify(subscribers));
-        status.classList.add("subscription-status-success");
-        setTranslatedText(status, "Saved in this browser only. Email updates are not active yet.");
-        emailInput.value = "";
-        setTranslatedText(buttonLabel, "Saved");
-      } catch (error) {
-        console.error("Could not save subscription data.", error);
-        status.classList.add("subscription-status-error");
-        setTranslatedText(status, "Could not save your email in this browser. Check storage settings and try again.");
-        setTranslatedText(buttonLabel, "Subscribe");
-      } finally {
-        submitButton.disabled = false;
-        buttonSpinner.classList.add("hidden");
-      }
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        body: new FormData(subscriptionForm),
+        headers: { Accept: "application/json" },
+      });
 
+      if (response.ok) {
+        status.classList.add("subscription-status-success");
+        setTranslatedText(status, "Thanks for subscribing. Your email has been received.");
+        subscriptionForm.reset();
+        setTranslatedText(buttonLabel, "Subscribed");
+      } else {
+        console.error(`Formspree rejected the subscription with status ${response.status}.`);
+        status.classList.add("subscription-status-error");
+        setTranslatedText(status, "Could not submit your subscription. Please try again.");
+      }
+    } catch (error) {
+      console.error("Could not send the subscription to Formspree.", error);
+      status.classList.add("subscription-status-error");
+      setTranslatedText(status, "Could not submit your subscription. Please try again.");
+    } finally {
+      submitButton.disabled = false;
+      buttonSpinner.classList.add("hidden");
       window.setTimeout(function () {
         setTranslatedText(buttonLabel, "Subscribe");
       }, 1800);
-    }, 650);
+    }
   });
 }
 
