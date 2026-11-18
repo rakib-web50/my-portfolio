@@ -70,7 +70,7 @@ const bengaliTranslations = new Map(
     "Engineering at a glance": "এক নজরে ইঞ্জিনিয়ারিং",
     "I build software with a focus on clear code and reliable results—from understanding requirements to testing and refining each solution.": "প্রয়োজন বোঝা থেকে শুরু করে পরীক্ষা ও পরিমার্জন পর্যন্ত, পরিষ্কার কোড এবং নির্ভরযোগ্য ফলাফলে গুরুত্ব দিয়ে সফটওয়্যার তৈরি করি।",
     "Project experience": "প্রকল্পের অভিজ্ঞতা",
-    "More than 30 projects completed": "৩০টির বেশি প্রকল্প সম্পন্ন",
+    "5+ projects completed": "৫ বা তার বেশি প্রকল্প সম্পন্ন",
     "projects completed": "টি প্রকল্প সম্পন্ন",
     "Completed projects across software development, application features, and web solutions.": "সফটওয়্যার ডেভেলপমেন্ট, অ্যাপ্লিকেশন ফিচার এবং ওয়েব সমাধান নিয়ে প্রকল্প সম্পন্ন করেছি।",
     "Core technologies": "প্রধান প্রযুক্তি",
