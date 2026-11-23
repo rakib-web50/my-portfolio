@@ -7,6 +7,51 @@ function setTranslatedText(element, message) {
   element.textContent = translatePortfolioMessage(message);
 }
 
+const heroHeading = document.querySelector("#hero-heading");
+
+if (heroHeading) {
+  const fullName = heroHeading.textContent.trim();
+  heroHeading.setAttribute("aria-label", fullName);
+  heroHeading.classList.add("hero-title-animated");
+
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    heroHeading.replaceChildren(
+      ...Array.from(fullName, function (character, index) {
+        const letter = document.createElement("span");
+        letter.className = `hero-name-letter${index < 2 ? " hero-name-initial" : ""}`;
+        letter.setAttribute("aria-hidden", "true");
+        letter.style.setProperty("--hero-name-delay", `${index * 45}ms`);
+        letter.textContent = character === " " ? "\u00a0" : character;
+        return letter;
+      })
+    );
+  }
+}
+
+const skillsMarquee = document.querySelector("#hero-skills-marquee");
+const skillsMarqueeToggle = document.querySelector("#hero-skills-toggle");
+
+if (skillsMarquee && skillsMarqueeToggle) {
+  function updateSkillsMarqueeToggle() {
+    const isPaused = skillsMarquee.classList.contains("is-paused");
+    const label = isPaused ? "Resume skills ticker" : "Pause skills ticker";
+    const translatedLabel = translatePortfolioMessage(label);
+
+    skillsMarqueeToggle.setAttribute("aria-label", translatedLabel);
+    skillsMarqueeToggle.setAttribute("title", translatedLabel);
+    skillsMarqueeToggle.setAttribute("aria-pressed", String(isPaused));
+    skillsMarqueeToggle.querySelector("span").textContent = isPaused ? "▶" : "Ⅱ";
+  }
+
+  skillsMarqueeToggle.addEventListener("click", function () {
+    skillsMarquee.classList.toggle("is-paused");
+    updateSkillsMarqueeToggle();
+  });
+
+  document.addEventListener("portfolio-language-change", updateSkillsMarqueeToggle);
+  updateSkillsMarqueeToggle();
+}
+
 document.addEventListener("portfolio-language-change", function () {
   for (const element of document.querySelectorAll("[data-translation-key]")) {
     element.textContent = translatePortfolioMessage(element.dataset.translationKey);
