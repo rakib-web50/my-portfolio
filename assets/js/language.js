@@ -21,7 +21,7 @@ const bengaliTranslations = new Map(
     "Software Engineer": "সফটওয়্যার ইঞ্জিনিয়ার",
     at: "এ",
     "SKF Pharmaceuticals": "এসকেএফ ফার্মাসিউটিক্যালস",
-    "I build full-stack web experiences, customize WordPress sites, and work with C, C++, Java, JavaScript, PHP, MongoDB, and practical AI tools.": "আমি ফুল-স্ট্যাক ওয়েব অভিজ্ঞতা তৈরি করি, WordPress সাইট কাস্টমাইজ করি এবং C, C++, Java, JavaScript, PHP, MongoDB ও ব্যবহারিক AI টুল নিয়ে কাজ করি।",
+    "I’m a Full-Stack Web Developer and WordPress Customizer with expertise in C, C++, Java, JavaScript, PHP, MongoDB, and practical AI tools.": "আমি একজন ফুল-স্ট্যাক ওয়েব ডেভেলপার ও WordPress কাস্টমাইজার। C, C++, Java, JavaScript, PHP, MongoDB এবং ব্যবহারিক AI টুলে আমার দক্ষতা রয়েছে।",
     "C, C++, Java, JavaScript, PHP, MongoDB, AI tools, full-stack web development, and WordPress customization.": "C, C++, Java, JavaScript, PHP, MongoDB, AI টুল, ফুল-স্ট্যাক ওয়েব ডেভেলপমেন্ট এবং WordPress কাস্টমাইজেশন।",
     "Full-Stack Web Developer": "ফুল-স্ট্যাক ওয়েব ডেভেলপার",
     "WordPress Customizer": "WordPress কাস্টমাইজার",
