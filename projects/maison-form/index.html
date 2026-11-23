@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Maison Form is an independent skincare storefront concept with a browser-only cart and test checkout preview." />
+    <meta name="theme-color" content="#f5f2ea" />
+    <title>Maison Form — Everyday care, made simple</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="announcement">Independent concept · Sample products · Checkout preview only</div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Maison Form home">MAISON FORM<span>.</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation"><a href="#shop">Shop all</a><a href="#approach">Our approach</a><a href="#ritual">The ritual</a></nav>
+      <button class="bag-button" id="open-cart" type="button" aria-haspopup="dialog" aria-controls="cart-dialog"><span aria-hidden="true">⌑</span> Bag <span class="bag-count" id="bag-count">0</span></button>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy"><p class="eyebrow"><span aria-hidden="true"></span> Skincare, simplified</p><h1 id="hero-title">A softer kind of <em>everyday care.</em></h1><p class="hero-lede">A considered collection concept for building a gentle, uncomplicated daily ritual.</p><div class="hero-actions"><a class="button button-dark" href="#shop">Explore the collection <span aria-hidden="true">↗</span></a><a class="text-link" href="#approach">Our approach <span aria-hidden="true">↓</span></a></div><div class="hero-promise"><span aria-hidden="true">✳</span> Simple by design. Gentle by nature.</div></div>
+        <div class="hero-art" role="img" aria-label="Illustration of three skincare containers in soft botanical colors"><div class="art-sun"></div><div class="leaf leaf-one"></div><div class="leaf leaf-two"></div><div class="bottle bottle-small"><span>MAISON<br /><small>GENTLE CLEANSE</small></span></div><div class="bottle bottle-tall"><span>MAISON<br /><small>DAILY MOISTURE</small></span></div><div class="bottle bottle-oil"><span>MAISON<br /><small>FACE OIL</small></span></div><div class="hero-art-caption">A daily ritual, reimagined.</div></div>
+      </section>
+
+      <section class="ritual-strip" id="ritual"><div class="ritual-item"><span class="ritual-number">01</span><strong>Cleanse gently</strong></div><span class="ritual-arrow" aria-hidden="true">→</span><div class="ritual-item"><span class="ritual-number">02</span><strong>Restore moisture</strong></div><span class="ritual-arrow" aria-hidden="true">→</span><div class="ritual-item"><span class="ritual-number">03</span><strong>Take a moment</strong></div></section>
+
+      <section class="shop-section section-wrap" id="shop" aria-labelledby="shop-title">
+        <div class="section-heading"><div><p class="eyebrow">The essentials</p><h2 id="shop-title">Make space for your ritual.</h2></div><p>Explore sample products from this independent storefront concept. Product descriptions and prices are illustrative.</p></div>
+        <div class="shop-toolbar"><p id="product-count" aria-live="polite">Showing 4 products</p><div class="filters" role="group" aria-label="Filter products"><button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All essentials</button><button type="button" class="filter-button" data-filter="cleanse" aria-pressed="false">Cleanse</button><button type="button" class="filter-button" data-filter="moisture" aria-pressed="false">Moisture</button></div></div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="approach-section" id="approach" aria-labelledby="approach-title"><div class="section-wrap approach-grid"><div class="approach-art" aria-hidden="true"><div class="approach-disc"></div><div class="approach-bottle"></div><span class="approach-star">✳</span><span class="approach-caption">Less, with intention.</span></div><div class="approach-copy"><p class="eyebrow">Our philosophy</p><h2 id="approach-title">Good routines leave room to breathe.</h2><p>Maison Form imagines a more thoughtful shelf: a few easy-to-understand essentials, made to fit into the day you already have.</p><div class="philosophy-points"><span><i>01</i> Clear, considered choices</span><span><i>02</i> A steady everyday rhythm</span><span><i>03</i> No pressure to do more</span></div></div></div></section>
+      <section class="newsletter section-wrap"><p class="eyebrow">A note for your inbox</p><h2>Slow down, now and then.</h2><p>This concept newsletter is a visual demo. It does not collect or send email.</p><a class="button button-outline" href="#top">Back to the beginning ↑</a></section>
+    </main>
+
+    <footer class="site-footer"><a class="brand" href="#top">MAISON FORM<span>.</span></a><p>Independent concept project · Fictional products · No real orders or payments.</p><a href="../../index.html#projects">Back to portfolio ↗</a></footer>
+
+    <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+      <div class="dialog-header"><div><p class="eyebrow">Your selection</p><h2 id="cart-title">Your bag <span id="cart-title-count">(0)</span></h2></div><button class="close-button" type="button" data-close="cart-dialog" aria-label="Close bag">×</button></div>
+      <p class="demo-note">Checkout preview only. Nothing here is a real order and no payment details are requested.</p>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty"><span aria-hidden="true">⌑</span><p>Your bag is taking a quiet moment.</p><button class="text-button" type="button" data-close="cart-dialog">Explore essentials</button></div>
+      <div class="cart-footer" id="cart-footer"><div class="subtotal-row"><span>Sample subtotal</span><strong id="cart-subtotal">$0.00</strong></div><p>Shipping and taxes are not calculated in this demo.</p><button class="button button-dark checkout-button" type="button" id="checkout-button">Continue to test checkout <span aria-hidden="true">→</span></button></div>
+    </dialog>
+    <dialog class="checkout-dialog" id="checkout-dialog" aria-labelledby="checkout-title">
+      <div class="dialog-header"><div><p class="eyebrow">DEMO ONLY · NO PAYMENT</p><h2 id="checkout-title">Checkout preview</h2></div><button class="close-button" type="button" data-close="checkout-dialog" aria-label="Close checkout">×</button></div>
+      <p class="demo-note">This is a simulated checkout. Do not enter real payment or personal information.</p>
+      <form id="checkout-form"><label for="checkout-name">Name</label><input id="checkout-name" name="name" required maxlength="80" placeholder="Demo customer" /><label for="checkout-email">Email</label><input id="checkout-email" name="email" type="email" required maxlength="120" placeholder="demo@example.com" /><div class="checkout-total"><span>Sample total</span><strong id="checkout-total">$0.00</strong></div><button class="button button-dark checkout-button" type="submit">Preview test order</button></form>
+      <p class="checkout-status" id="checkout-status" role="status" aria-live="polite"></p>
+    </dialog>
+  </body>
+</html>

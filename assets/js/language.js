@@ -108,6 +108,7 @@ const bengaliTranslations = new Map(
     "Brand experience": "ব্র্যান্ড অভিজ্ঞতা",
     "Online store": "অনলাইন স্টোর",
     "Live Demo": "লাইভ ডেমো",
+    "View Source": "সোর্স কোড দেখুন",
     GitHub: "GitHub",
     "Independent concept · Healthcare": "স্বাধীন ধারণা · স্বাস্থ্যসেবা",
     "Full Careflow Clinic website concept, from the welcome section and services to the final appointment call to action": "স্বাগত অংশ ও সেবা থেকে শেষের অ্যাপয়েন্টমেন্ট আহ্বান পর্যন্ত Careflow Clinic ওয়েবসাইটের সম্পূর্ণ ধারণা।",

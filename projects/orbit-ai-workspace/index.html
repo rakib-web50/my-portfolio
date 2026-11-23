@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Orbit is an independent productivity workspace concept with locally saved notes, tasks and a sample AI assistant." />
+    <meta name="theme-color" content="#f6f5fb" />
+    <title>Orbit Workspace — Bring your work into focus</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to workspace</a>
+    <div class="demo-banner"><span class="demo-dot" aria-hidden="true"></span> Independent concept · AI preview · Your notes stay in this browser</div>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Workspace sidebar">
+        <a class="brand" href="#main"><span class="brand-symbol" aria-hidden="true">✳</span> orbit</a>
+        <div class="workspace-switch" aria-label="Current workspace: Personal workspace"><span class="workspace-avatar">R</span><span><strong>Personal workspace</strong><small>Free plan · Demo</small></span><span class="switch-chevron" aria-hidden="true">⌄</span></div>
+        <p class="side-label">WORKSPACE</p>
+        <nav class="side-nav" aria-label="Workspace navigation">
+          <a class="side-link is-active" href="#overview" aria-current="page"><span aria-hidden="true">◫</span> Overview</a>
+          <a class="side-link" href="#notes"><span aria-hidden="true">▤</span> My notes <span class="nav-count" id="note-count">3</span></a>
+          <a class="side-link" href="#tasks"><span aria-hidden="true">☑</span> Tasks</a>
+        </nav>
+        <p class="side-label side-label-spaced">YOUR SPACE</p>
+        <div class="space-item"><span class="space-dot dot-violet"></span> Product ideas</div>
+        <div class="space-item"><span class="space-dot dot-cyan"></span> This week</div>
+        <button class="add-space" type="button" id="add-note-button"><span aria-hidden="true">+</span> New note</button>
+        <div class="sidebar-bottom"><span class="profile-avatar">MR</span><span><strong>My workspace</strong><small>Saved on this device</small></span><span class="profile-more" aria-hidden="true">···</span></div>
+      </aside>
+
+      <main class="main-panel" id="main">
+        <header class="topbar"><div class="breadcrumbs">Personal workspace <span>/</span> <strong>Overview</strong></div><div class="topbar-actions"><span class="today-label" id="today-label"></span><button class="icon-button" type="button" aria-label="Help and about this demo" id="about-button">?</button><span class="top-avatar" aria-hidden="true">R</span></div></header>
+        <div class="workspace-content" id="overview">
+          <section class="welcome-row" aria-labelledby="welcome-title"><div><p class="welcome-eyebrow">MONDAY, YOUR WAY</p><h1 id="welcome-title">Make room for <span>good work.</span></h1><p class="welcome-copy">A quieter place to collect ideas, find your next step, and keep moving.</p></div><button class="primary-button" type="button" id="welcome-note-button"><span aria-hidden="true">+</span> Create a note</button></section>
+
+          <section class="focus-card" aria-labelledby="focus-title">
+            <div class="focus-copy"><span class="focus-kicker"><span aria-hidden="true">✦</span> YOUR FOCUS TODAY</span><h2 id="focus-title">Small steps count.</h2><p>Choose one useful thing to move forward. The rest can wait.</p><a href="#tasks" class="focus-link">See your tasks <span aria-hidden="true">→</span></a></div>
+            <div class="focus-graphic" aria-hidden="true"><div class="focus-ring ring-one"></div><div class="focus-ring ring-two"></div><div class="focus-spark">✦</div><div class="focus-mini-card"><span class="mini-check">✓</span><span>One thing at a time</span></div></div>
+          </section>
+
+          <div class="section-title-row" id="notes"><div><p class="section-overline">COLLECT YOUR THOUGHTS</p><h2>Recent notes <span class="subtle-count" id="recent-count">(3)</span></h2></div><button class="quiet-button" type="button" id="all-notes-button">New note <span aria-hidden="true">+</span></button></div>
+          <div class="note-grid" id="note-grid" aria-live="polite"></div>
+
+          <section class="tasks-section" id="tasks" aria-labelledby="tasks-title">
+            <div class="section-title-row"><div><p class="section-overline">KEEP IT MOVING</p><h2 id="tasks-title">Your next steps</h2></div><span class="task-summary" id="task-summary"></span></div>
+            <div class="task-list" id="task-list"></div>
+          </section>
+
+          <section class="assistant-panel" aria-labelledby="assistant-title">
+            <div class="assistant-heading"><div class="assistant-icon" aria-hidden="true">✦</div><div><p class="section-overline">A LITTLE HELP, WHEN YOU NEED IT</p><h2 id="assistant-title">Think it through with Orbit.</h2></div><span class="sample-badge">SAMPLE AI</span></div>
+            <p class="assistant-copy" id="assistant-copy">Try a prompt and explore a sample response. This public GitHub Pages demo does not connect to an AI service.</p>
+            <div class="suggestion-row" aria-label="Suggested prompts"><button class="suggestion-chip" type="button" data-prompt="Help me plan my week">Help me plan my week</button><button class="suggestion-chip" type="button" data-prompt="Break this idea into small steps">Break an idea into steps</button><button class="suggestion-chip" type="button" data-prompt="Help me focus on one thing">Help me focus</button></div>
+            <form class="chat-form" id="chat-form"><label class="sr-only" for="chat-prompt">Ask Orbit</label><textarea id="chat-prompt" name="prompt" rows="2" maxlength="500" placeholder="What are you working through?"></textarea><button type="submit" class="send-button" aria-label="Send prompt"><span aria-hidden="true">↑</span></button></form>
+            <div class="chat-output" id="chat-output" aria-live="polite" aria-atomic="true"></div>
+            <p class="privacy-note" id="privacy-note"><span aria-hidden="true">◌</span> Sample replies are generated in your browser. Notes are saved only on this device.</p>
+          </section>
+          <footer class="workspace-footer"><span>Orbit is an independent concept by MD Rakib Hossain.</span><a href="../../index.html#projects">Back to portfolio ↗</a></footer>
+        </div>
+      </main>
+    </div>
+
+    <dialog class="note-dialog" id="note-dialog" aria-labelledby="note-dialog-title">
+      <form method="dialog" class="dialog-top"><div><p class="section-overline">CAPTURE A THOUGHT</p><h2 id="note-dialog-title">New note</h2></div><button class="close-button" aria-label="Close dialog">×</button></form>
+      <form id="note-form"><label for="note-title">Title</label><input id="note-title" name="title" maxlength="70" required placeholder="Give your note a name" /><label for="note-body">Your thought</label><textarea id="note-body" name="body" rows="5" maxlength="800" required placeholder="Write a few lines..."></textarea><div class="dialog-actions"><button class="quiet-button" type="button" id="cancel-note">Cancel</button><button class="primary-button" type="submit">Save note</button></div></form>
+    </dialog>
+    <dialog class="note-dialog about-dialog" id="about-dialog" aria-labelledby="about-title">
+      <form method="dialog" class="dialog-top"><div><p class="section-overline">A NOTE ABOUT ORBIT</p><h2 id="about-title">A focused workspace concept.</h2></div><button class="close-button" aria-label="Close dialog">×</button></form>
+      <p>Orbit brings notes, small plans, and a gentle AI assistant together. This portfolio version saves notes to this browser and uses sample assistant replies.</p><p>Gemini is the recommended provider for a future secure integration. An API key must be stored on a server—not in this public page—and is not configured in this GitHub Pages demo.</p>
+    </dialog>
+  </body>
+</html>
