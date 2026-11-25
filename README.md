@@ -35,6 +35,6 @@ To enable live Gemini responses, create a Vercel project with `projects/orbit-ai
 
 ## Portfolio placeholders
 
-- The Download CV link points to `assets/MD_Rakib_Hossain_CV_Professional.pdf`.
+- The Download CV link points to `assets/Md_Rakib_Hossain_CV-v5.pdf`.
 - Replace `YOUR_LINKEDIN_URL` with your LinkedIn profile URL.
 - The social preview image is `assets/images/og-image.png` and should remain 1200 × 630 pixels.
