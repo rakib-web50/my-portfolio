@@ -811,10 +811,6 @@ footer a:hover {
     white-space: nowrap;
   }
 
-  .hero-title-animated::after {
-    display: none;
-  }
-
   .hero-section > div {
     min-width: 0;
   }
@@ -1874,18 +1870,6 @@ button:focus-visible {
   }
 }
 
-.hero-title-animated::after {
-  display: block;
-  width: 4.25rem;
-  height: 0.22rem;
-  margin-top: 0.32em;
-  border-radius: 9999px;
-  background: linear-gradient(90deg, var(--cyan), #a9c5ff);
-  content: "";
-  transform-origin: left center;
-  animation: hero-name-mark 380ms ease-out 880ms both;
-}
-
 .hero-name-letter {
   display: inline-block;
   opacity: 0;
@@ -1902,18 +1886,6 @@ button:focus-visible {
   to {
     opacity: 1;
     transform: translateY(0) rotateX(0);
-  }
-}
-
-@keyframes hero-name-mark {
-  from {
-    opacity: 0;
-    transform: scaleX(0);
-  }
-
-  to {
-    opacity: 1;
-    transform: scaleX(1);
   }
 }
 
@@ -2012,10 +1984,6 @@ button:focus-visible {
   .hero-name-letter {
     opacity: 1;
     transform: none;
-    animation: none;
-  }
-
-  .hero-title-animated::after {
     animation: none;
   }
 
