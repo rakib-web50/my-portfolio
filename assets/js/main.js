@@ -21,7 +21,7 @@ if (heroHeading) {
         letter.className = `hero-name-letter${index < 2 ? " hero-name-initial" : ""}`;
         letter.setAttribute("aria-hidden", "true");
         letter.style.setProperty("--hero-name-delay", `${index * 45}ms`);
-        letter.textContent = character === " " ? "\u00a0" : character;
+        letter.textContent = character === " " ? "\u00A0" : character;
         return letter;
       })
     );

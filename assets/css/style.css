@@ -805,6 +805,49 @@ footer a:hover {
 }
 
 @media (max-width: 640px) {
+  .hero-title {
+    font-size: 1.875rem;
+    line-height: 1.08;
+    white-space: nowrap;
+  }
+
+  .hero-title-animated::after {
+    display: none;
+  }
+
+  .hero-section > div {
+    min-width: 0;
+  }
+
+  .hero-section > div > div:first-child,
+  .hero-title,
+  .hero-role,
+  .hero-copy,
+  .hero-facts {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    overflow-wrap: anywhere;
+  }
+
+  .hero-name-letter {
+    white-space: normal;
+  }
+
+  .hero-facts {
+    column-gap: 1.5rem;
+  }
+
+  .hero-facts > div {
+    min-width: 0;
+  }
+
+  .hero-section .profile-card {
+    max-width: 16rem;
+  }
+
   .hero-section::after {
     background-size: 42px 42px;
     mask-image: linear-gradient(180deg, transparent, #000 70%);
@@ -1998,3 +2041,4 @@ button:focus-visible {
     display: none;
   }
 }
+
